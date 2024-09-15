@@ -1,0 +1,235 @@
+#+title:      infrastructure
+#+date:       [2024-03-31 Sun 22:04]
+#+filetags:   
+#+identifier: 20240331T220400
+
+* Nano Pi
+** OpenWRT
+*** lan
+#+begin_src sh
+  uci del dhcp.lan.ra_slaac # ?
+  uci set network.lan.ipaddr='192.168.36.1'
+  uci commit network
+#+end_src
+
+*** update & packages
+=opkg update=
+=opkg install kmod-mt76x2u hostapd sing-box tailscale iptables-nft parted tune2fs resize2fs=
+
+*** sd card expanding the ext4 file system
+https://openwrt.org/docs/guide-user/installation/installation_methods/sd_card#ext4_image
+
+1. parted
+   #+begin_src sh
+     parted
+     p
+     resizepart 2 12GB
+     q
+  #+end_src
+
+2. repair device
+   #+begin_src sh
+     mount -o remount,ro /                     #Remount root as Read Only
+     tune2fs -O^resize_inode /dev/mmcblk0p2    #Remove reserved GDT blocks
+     fsck.ext4 /dev/mmcblk0p2    
+   #+end_src
+
+3. then =reboot=
+4. then =resize2fs /dev/mmcblk0p2=
+
+*** setup wi-fi
+#+begin_src sh
+  uci set wireless.radio0.cell_desity='0'
+  uci set wireless.default_radio0.ssid='abc'
+  uci set wireless.default_radio0.encryption='psk2'
+  uci set wireless.default_radio0.key='***'
+#+end_src
+And =Enable=
+
+*** connect wi-fi
+*** password
+#+begin_src sh
+  uci set passwd.password="***"
+  uci commit system
+#+end_src
+*** ssh key
+
+*** sing-box
+**** modify =/etc/config/sing-box= set user as =root=
+**** config
+#+begin_src json
+{
+    "log": {},
+    "dns": {
+        "servers": [
+            {
+                "address": "https://dns.google/dns-query",
+                "address_resolver": "dns-local",
+                "tag": "dns-remote"
+            },
+            {
+                "address": "local",
+                "address_resolver": "dns-local",
+                "detour": "direct",
+                "tag": "dns-direct"
+            },
+            {
+                "address": "local",
+                "detour": "direct",
+                "tag": "dns-local"
+            },
+            {
+                "address": "rcode://success",
+                "tag": "dns-block"
+            }
+        ],
+        "rules": [
+            {
+                "domain": [
+                    "localhost",
+                    "yayasay.net"
+                ],
+                "server": "dns-local"
+            }
+        ]
+    },
+    "ntp": {},
+    "inbounds": [
+        {
+            "type": "tun",
+            "inet4_address": "172.19.0.1/30",
+            "inet6_address": "fdfe:dcba:9876::1/126",
+            "auto_route": true,
+            "strict_route": true,
+            "sniff": true,
+            "sniff_override_destination": false,
+            "exclude_interface": "tailscale"
+        }
+    ],
+    "outbounds": [
+        {
+            "type": "hysteria2",
+            "server": "<domain>",
+            "server_port": 443,
+            "password": "<password>",
+            "tls": {
+                "enabled": true,
+		"alpn": [
+                    "h3"
+                ]
+            },
+            "tag": "proxy"
+        },
+        {
+            "type": "direct",
+            "tag": "direct"
+        },
+        {
+            "type": "dns",
+            "tag": "dns-out"
+        }
+    ],
+    "route": {
+        "rules": [
+            {
+                "protocol": "dns",
+                "outbound": "dns-out"
+            },
+            {
+                "ip_is_private": true,
+		"domain": [
+                ],
+                "domain_suffix": [
+                    ".ls.apple.com"
+                ],
+                "outbound": "direct"
+            }
+        ],
+        "auto_detect_interface": true
+    },
+    "experimental": {}
+}
+#+end_src
+**** service start sing-box
+
+**** =/etc/init.d/sing-box start=
+**** add interface
+https://pfchina.org/?p=11850
+#+begin_src sh
+  uci set network.proxy=interface
+  uci set network.proxy.proto='none'
+  uci set network.proxy.device='tun0'
+#+end_src
+
+**** add firewall
+https://pfchina.org/?p=11850
+#+begin_src sh
+  uci add firewall zone # =cfg0edc81
+  uci set firewall.@zone[-1].name='proxy'
+  uci set firewall.@zone[-1].input='ACCEPT'
+  uci set firewall.@zone[-1].output='ACCEPT'
+  uci set firewall.@zone[-1].forward='REJECT'
+  uci set firewall.@zone[-1].masq='1'
+  uci add_list firewall.@zone[-1].network='proxy'
+  uci add firewall forwarding # =cfg0fad58
+  uci set firewall.@forwarding[-1].src='lan'
+  uci set firewall.@forwarding[-1].dest='proxy'
+#+end_src
+
+**** set domain
+add below to =/etc/config/dhcp= section =config dnsmasq=
+#+begin_src
+  list address '/<domain>/<ip>'
+  list address '/<domain>/<ipv6>'
+#+end_src
+
+**** =/etc/init.d/sing-box start=
+**** =logread -f=
+
+*** tailscale
+https://openwrt.org/docs/guide-user/services/vpn/tailscale/start
+
+**** =tailscale up --netilter-mode=off=
+**** add interface
+#+begin_src sh
+  uci set network.tailscale=interface
+  uci set network.tailscale.proto='none'
+  uci set network.tailscale.device='tailscale0'
+#+end_src
+**** add firewall
+#+begin_src sh
+  uci add firewall zone # =cfg10dc81
+  uci set firewall.@zone[-1].name='tailscale'
+  uci set firewall.@zone[-1].input='ACCEPT'
+  uci set firewall.@zone[-1].output='ACCEPT'
+  uci set firewall.@zone[-1].forward='ACCEPT'
+  uci set firewall.@zone[-1].masq='1'
+  uci set firewall.@zone[-1].mtu_fix='1'
+  uci add_list firewall.@zone[-1].network='tailscale'
+  uci add firewall forwarding # =cfg11ad58
+  uci set firewall.@forwarding[-1].src='tailscale'
+  uci set firewall.@forwarding[-1].dest='lan'
+  uci add firewall forwarding # =cfg12ad58
+  uci set firewall.@forwarding[-1].src='tailscale'
+  uci set firewall.@forwarding[-1].dest='proxy'
+  uci add firewall forwarding # =cfg13ad58
+  uci set firewall.@forwarding[-1].src='tailscale'
+  uci set firewall.@forwarding[-1].dest='wan'
+  uci add firewall forwarding # =cfg14ad58
+  uci set firewall.@forwarding[-1].src='lan'
+  uci set firewall.@forwarding[-1].dest='tailscale'
+#+end_src
+
+https://openwrt.org/docs/guide-user/services/vpn/tailscale/start#how_to_setup_a_subnet_routerexit_node
+Forward to =proxy= of course
+
+**** =tailscale up --netfilter-mode=off --accept-routes --advertise-exit-node --advertise-routes=192.168.36.0/24,240.0.0.0/8=
+
+
+* Proxy on Cloud (Vultr)
+** Hysteria2
+** wgcf (Cloudflare Warp)
+
+* ASUS PB62 [[denote:20240327T093028][private cloud]]
+
+* Raspberry Pi

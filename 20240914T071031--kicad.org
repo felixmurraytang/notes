@@ -1,0 +1,8 @@
+#+title:      kicad
+#+date:       [2024-09-14 Sat 07:10]
+#+filetags:   
+#+identifier: 20240914T071031
+
+#+begin_src bash
+  echo hi
+#+end_src

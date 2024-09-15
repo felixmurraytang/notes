@@ -1,0 +1,12 @@
+#+title:      microk8s
+#+date:       [2024-03-27 Wed 09:36]
+#+filetags:   :kubernetes:lxd:
+#+identifier: 20240327T093642
+
+I love microk8s, because it just need few command to create. decreate from install to development.
+
+I will record what I learned from microk8s. Awesome.
+
+* Install
+* Issue: don't work after reboot host system
+- The ip changed

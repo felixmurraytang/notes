@@ -1,0 +1,14 @@
+#+title:      emacs
+#+date:       [2024-04-01 Mon 18:44]
+#+filetags:   :emacs:
+#+identifier: 20240401T184455
+
+* Dired Ignore
+#+begin_src emacs-lisp
+  (setq dired-omit-files "\\.dir-locals.el")
+  (add-hook 'dired-mode-hook (lambda () (dired-omit-mode)))
+  (add-hook 'dired-mode-hook 'auto-revert-mode)
+#+end_src
+
+#+RESULTS:
+| auto-revert-mode | (lambda nil (dired-omit-mode)) | denote-dired-mode-in-directories |

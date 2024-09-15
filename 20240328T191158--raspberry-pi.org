@@ -1,0 +1,8 @@
+#+title:      raspberry pi
+#+date:       [2024-03-28 Thu 19:11]
+#+filetags:   
+#+identifier: 20240328T191158
+
+This Raspberry Pi 4B+ is my old friend from my collage life.
+
+Now I plan to use it as my [[denote:20240327T101347][ros]] mobile hardware.

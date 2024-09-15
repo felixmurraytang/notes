@@ -1,0 +1,30 @@
+#+title:      freebsd
+#+date:       [2024-09-13 Fri 14:18]
+#+filetags:   :freebsd:
+#+identifier: 20240913T141808
+
+freebsd is my new base os. i love it because,
+
+1. clean, full
+   not like linux + gnu + others. freebsd base system on a single repository. which made clean and find the source code very easy.
+2. ~IDS~
+   =freebsd-update IDS=
+   i love the feeling that i can totally control my os.
+   i can know where each file on os from easily which is difficult to do that on linux distribution.
+
+what i use.
+
+** jails
+primary method to deploy software or any other tasks.
+
+*** bhyve
+i use bhyve inside jails becasue i what bhyve only used as jail's fallback.
+
+** pf
+firewall that i think is easier then iptables.
+
+** pkg
+the most clear package management i used.
+
+*** the only package i used are ~doas~ and ~tmux~.
+*** TODO learn how to pack

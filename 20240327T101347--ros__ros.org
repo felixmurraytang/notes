@@ -1,0 +1,15 @@
+#+title:      ros
+#+date:       [2024-03-27 Wed 10:13]
+#+filetags:   :ros:
+#+identifier: 20240327T101347
+
+Of course, ROS means ROS 2.
+
+I am trying a demo,
+
+The =demo_package= on =ros/src=
+
+* TODO Meet issue
+~felix@ros:~/ros$ ros2 run demo_package publisher
+No executable found~
+

@@ -1,0 +1,13 @@
+#+title:      private cloud
+#+date:       [2024-03-27 Wed 09:30]
+#+filetags:   :infrastructure:
+#+identifier: 20240327T093028
+
+I use my poor ASUS PB62 Mini PC as my private cloud server.
+
+* What OS I use?
+Ubuntu 22.04.4 LTS server
+
+* What I installed and configued?
+ALl on =LXD=
+** [[denote:20240326T195811][lxd]]
