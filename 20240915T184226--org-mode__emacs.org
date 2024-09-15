@@ -1,0 +1,593 @@
+#+title:      org mode
+#+date:       [2024-09-15 Sun 18:42]
+#+filetags:   :emacs:
+#+identifier: 20240915T184226
+
+Org-mode is a GNU Emacs major mode for convenient plain text markdup and much more.
+
+It seamlessly integrates all your _notes, mindmaps, TODO lists, calendar, day planner, and project schedules_ into a single system
+that can be easily searched (e.g. by grep), encrypted (e.g. by GnuPG), backed up and synced (e.g. by Dropbox), imported/exported, and accessed on the go (e.g. on an iPhone or Android smartphone). It can even be used for authoring web pages and documents.
+
+* Document Structure
+** Headlines
+The sturcture of an outline tree.
+** Visuability Cycling
+*** Global and local cycling
+*** Intitial visibility
+#+begin_example
+,#+STARTUP: overview
+,#+STARTUP: content
+,#+STARTUP: showall
+,#+STARTUP: showeverything
+#+end_example
+*** Catching invisiable edits
+#+begin_src elisp
+  (setq org-catch-invisible-edits nil)
+#+end_src
+** Motion
+Jumping to other headlines
+#+begin_src emacs-lisp
+  (org-next-visible-heading)
+  (org-previous-visible-heading)
+  (org-forward-heading-same-level)
+  (org-backward-heading-same-level)
+  (outline-up-heading)
+  (org-goto)
+#+end_src
+** Structure editing
+Changing sequence and level of headlines.
+** Spare Trees
+=C-c /=
+** Plain Lists
+- Unordered list items start with ‘-’, ‘+’, or ‘*’9 as bullets.
+- Ordered list items start with a numeral followed by either a period or a right parenthesis10, such as ‘1.’ or ‘1)’11 If you want a list to start with a different value—e.g., 20—start the text of the item with ‘[@20]’12. Those constructs can be used in any item of the list in order to enforce a particular numbering.
+- Description list items are unordered list items, and contain the separator ‘::’ to distinguish the description term from the description.
+
+- The attack of the Rohirrim
+- Eowyn's fight with the witch king
+  + this was already my favorite scene in the book
+  + I really like Miranda Otto.
+- Peter Jackson being shot by Legolas
+  - on DVD only
+  He makes a really funny face when it happens.
+But in the end, no individual scenes matter but the film as a whole.
+Important actors in this film are:
+- Elijah Wood :: He plays Frodo
+- Sean Astin :: He plays Sam, Frodo's friend.  I still remember him
+     very well from his role as Mikey Walsh in /The Goonies/.
+     
+** Drawers
+*** This is a headline
+Still outside the drawer
+:DRAWERNAME:
+This is inside the drawer.
+:END:
+After the drawer.
+
+** Blocks
+‘#+BEGIN’ … ‘#+END’
+
+#+begin_tang
+tang
+#+end_tang
+
+#+begin_src
+#+STARTUP: hideblocks
+#+STARTUP: nohideblocks
+#+end_src
+
+* Org-table
+:PROPERTIES:
+:ID:       0A8D281D-09FD-4110-A515-DCFE95533734
+:END:
+** Buit-in table editor
+*** Creation and conversion
+(org-table-create-or-convert-from-region)
+*** Re-aligning and field motion
+(org-table-align)
+(org-table-next-field)
+(org-table-blank-field)
+(org-table-previous-field)
+(org-table-previous-field)
+(org-table-beginning-of-field)
+(org-table-end-of-field)
+*** Column and row editing
+(org-table-move-column-left)
+(org-table-move-column-right)
+(org-table-delete-column)
+(org-table-insert-column)
+(org-table-move-row-up)
+(org-table-move-row-down)
+(org-table-kill-row)
+*** Regions
+(org-table-copy-region)
+*** Calculations
+(org-table-sum)
+(org-table-copy-down)
+*** Miscellaneous
+(org-table-edit-field)
+(org-table-import)
+** Column width and alignment
+(org-table-toggle-column-width)
+** column groups
+| N | N^2 | N^3 | N^4 | sqrt(n) | sqrt[4](N) |
+|---+-----+-----+-----+---------+------------|
+| / |   < |     |   > |       < |          > |
+| 1 |   1 |   1 |   1 |       1 |          1 |
+| 2 |   4 |   8 |  16 |  1.4142 |     1.1892 |
+| 3 |   9 |  27 |  81 |  1.7321 |     1.3161 |
+|---+-----+-----+-----+---------+------------|
+#+TBLFM: $2=$1^2::$3=$1^3::$4=$1^4::$5=sqrt($1)::$6=sqrt(sqrt(($1)))
+** orgtbl miner mode
+For example in Message mode, use
+(add-hook 'message-mode-hook #'turn-on-orgtbl)
+** spreadsheet
+*** References
+Fields can be referenced by name, by absolute coordinates, and by relative coordinates.
+
+C-c ?
+C-c }
+
+#+name: spreadsheet_name1
+| First Name | Last Name | Full Name |
+|------------+-----------+-----------|
+| Bertrand   | Tang      | Bertrand  |
+| Henri      | Liu       | Henri     |
+| Arnold     | Zheng     | Arnold    |
+#+TBLFM: $3=$1
+**** Field references
+@ROW$COLUMN
+
+‘@2$3’ 2nd row, 3rd column (same as ‘C2’)
+‘$5’ column 5 in the current row (same as ‘E&’)
+‘@2’ current column, row 2
+‘@-1$-3’ field one row up, three columns to the left
+‘@-I$2’ field just under hline above current row, column 2
+‘@>$5’ field in the last row, in column 5
+**** Range rederences
+$1..$3
+$P..$Q
+$<<<..$>>
+@2$1..@4$3
+@I..II
+**** Field coordinates in formulas
+**** Named rederences
+**** Remote references
+For different table, either in the current file or even ina different file.
+
+remote(NAME, REF)
+*** Formula syntax for Calc
+https://orgmode.org/manual/Formula-syntax-for-Calc.html
+**** [[denote:20211001T124011][GNU Emacs Calculator]]
+*** Formula syntax for Lisp
+#+name: spreadsheet_name2
+| First Name | Last Name | Full Name     | Scoll |
+|------------+-----------+---------------+-------|
+| Bertrand   | Tang      | Bertrand Tang |    13 |
+| Henri      | Liu       | Henri Liu     |   424 |
+| Arnold     | Zheng     | Arnold Zheng  |    99 |
+#+tblfm: $3='(concat $1 " " $2)
+*** Durations and time values
+|  Task 1 |   Task 2 |    Total |
+|---------+----------+----------|
+|    2:12 |     1:47 | 03:59:00 |
+|    2:12 |     1:47 |    03:59 |
+| 3:02:20 | -2:07:00 |     0.92 |
+#+TBLFM: @2$3=$1+$2;T::@3$3=$1+$2;U::@4$3=$1+$2;t
+- T :: flag with seconds
+- U :: flag without seconds
+- t :: computed durations are displayed according to the value of the option org-table-duration-custom-format
+*** Field and range formulas
+*** Column formulas
+*** Lookup functions
+*** Editing and debugging formulas
+*** Updating the table
+*** Advanced features
+|---+---------+--------+--------+--------+-------+------|
+|   | Student | Prob 1 | Prob 2 | Prob 3 | Total | Note |
+|---+---------+--------+--------+--------+-------+------|
+| ! |         |     P1 |     P2 |     P3 |   Tot |      |
+| # | Maximum |     10 |     15 |     25 |    50 | 10.0 |
+| ^ |         |     m1 |     m2 |     m3 |    mt |      |
+|---+---------+--------+--------+--------+-------+------|
+| # | Peter   |     10 |      8 |     23 |    41 |  8.2 |
+| # | Sam     |      2 |      4 |      3 |     9 |  1.8 |
+|---+---------+--------+--------+--------+-------+------|
+|   | Average |        |        |        |  25.0 |      |
+| ^ |         |        |        |        |    at |      |
+| $ | max=50  |        |        |        |       |      |
+|---+---------+--------+--------+--------+-------+------|
+#+TBLFM: $6=vsum($P1..$P3)::$7=10*$Tot/$max;%.1f::$at=vmean(@-II..@-I);%.1f
+
+!
+^
+-
+$
+#
+*
+/
+** org plot
+*** Graphical plots
+#+PLOT: title:"Citas" ind:1 deps:(3) type:2d with:histograms set:"yrange [0:]"
+| Sede      | Max cites | H-index |
+|-----------+-----------+---------|
+| Chile     |    257.72 |   21.39 |
+| Leeds     |    165.77 |   19.68 |
+| Sao Paolo |     71.00 |   11.50 |
+| Stockholm |    134.19 |   14.33 |
+| Morelia   |    257.56 |   17.67 |
+
+C-c " g
+M-x org-plot/gnuplot
+
+Then popup a windows to display plot
+*** ASCII bar plots
+| Sede          | Max cites |              |
+|---------------+-----------+--------------|
+| Chile         |    257.72 | WWWWWWWWWWWW |
+| Leeds         |    165.77 | WWWWWWWh     |
+| Sao Paolo     |     71.00 | WWW;         |
+| Stockholm     |    134.19 | WWWWWW:      |
+| Morelia       |    257.56 | WWWWWWWWWWWW |
+| Rochefourchat |      0.00 |              |
+#+TBLFM: $3='(orgtbl-ascii-draw $2 0.0 257.72 12)
+* HyperLinks
+** link format
+** internal links
+#+NAME: My Target
+| a  | table      |
+|----+------------|
+| of | four cells |
+
+1. one item
+2. <<target>>another item
+Here we refer to item [[target]].
+** radio targets
+** external links
+*** file
+[[file:felix/]]
+*** TODO attachement
+*** TODO bbdb
+*** docview
+*** doi
+*** elisp
+[[elisp:(message "hello")]]
+*** gnus, rmail. mhe
+*** help
+*** http, https
+*** id
+*** info
+*** irc
+*** mailto
+*** news
+*** shell
+[[shell:ls /]["ls /"]]
+[[shell:echo "hello"]]
+** handling links
+=(org-store-link)=
+~(org-insert-link)~
+(org-open-at-point)
+
+(org-next-link)
+(org-previous-link)
+** using links outside org
+(org-insert-link-global)
+(org-open-at-point-global)
+** link abbreviations
+#+begin_src elisp
+  (setq org-link-abbrev-alist
+        '(("bugzilla"        . "http://10.1.2.9/bugzilla/show_bug.cgi?id=")
+          ("Nu Html Checker" . "https://validator.w3.org/nu/?doc=%h")
+          ("duckduckgo"      . "https://duckduckgo.com/?q=%s")
+          ("omap"            . "http://nominatim.openstreetmap.org/search?q=%s&polygon=1")
+          ("ads"             . "https://ui.adsabs.harvard.edu/search/q=%20author%3A\"%s\"")))
+#+end_src
+
+#+LINK: bugzilla  http://10.1.2.9/bugzilla/show_bug.cgi?id=
+#+LINK: duckduckgo https://duckduckgo.com/?q=%s
+** search options in file links
+:: for search
+::234 for lines
+::// for reg
+::* for headline
+::# for id
+** custom searches
+* TODO Items
+** basic
+C-c C-t (org-todo)
+C-c / t (org-show-todo-tree)
+** extended use of TODO keywords
+*** Workflow states
+#+begin_src elisp
+  (setq org-todo-keywords
+        '((sequence "TODO" "FEEDBACK" "VERIFY" "|" "DONE" "DELEGATED")))
+#+end_src
+*** /TODO/ types
+*** Multiple sets in one file
+#+begin_src elisp
+  (setq org-todo-keywords
+        '((sequence "TODO" "|" "DONE")
+          (sequence "REPORT" "BUG" "KNOWNCAUSE" "|" "FIXED")
+          (sequence "|" "CANCELED")))
+#+end_src
+*** Fast access to TODO states
+#+begin_src elisp
+  (setq org-todo-keywords
+        '((sequence "TODO(t)" "|" "DONE(d)")
+          (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
+          (sequence "|" "CANCELED(c)")))
+#+end_src
+*** Per-file keywords
+#+TODO: TODO FEEDBACK VERIFY | DONE CANCELED
+
+#+TODO: TODO(t) | DONE(d)
+#+TODO: REPORT(r) BUG(b) KNOWNCAUSE(k) | FIXED(f)
+#+TODO: | CANCELED(c)
+*** Faces for TODO keywords
+#+begin_src elisp
+(setq org-todo-keyword-faces
+      '(("TODO" . org-warning) ("STARTED" . "yellow")
+        ("CANCELED" . (:foreground "blue" :weight bold))))
+#+end_src
+*** /TODO/ dependencies
+(org-toggle-orderd-property)
+**** Parent
+:PROPERTIES:
+:ORDERED:  t
+:END:
+***** TODO a
+***** TODO b, needs to wait for (a)
+***** TODO c, needs to wait for (a) and (b)
+***** This entry is never blocked
+:PROPERTIES:
+:NOBLOCKING: t
+:END:
+** progress logging
+C-u C-c C-t
+*** Closing items
+=(setq org-log-done 'time)=
+=(setq org-log-done 'note)=
+*** Tracking TODO state changes
+#+begin_src elisp
+  (setq org-todo-keywords
+        '((sequence "TODO(t)" "WAIT(w@/!)" "|" "DONE(d!)" "CANCELED(c@)")))
+#+end_src
+
+! for timestamp
+@ for a note with timestamp
+
+#+TODO: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)
+
+**** TODO Log each state with only a time
+  :PROPERTIES:
+  :LOGGING: TODO(!) WAIT(!) DONE(!) CANCELED(!)
+  :END:
+**** TODO Only log when switching to WAIT, and when repeating
+  :PROPERTIES:
+  :LOGGING: WAIT(@) logrepeat
+  :END:
+**** TODO No logging at all
+  :PROPERTIES:
+  :LOGGING: nil
+  :END:
+*** Tracking your habits
+**** TODO Shave
+   SCHEDULED: <2009-10-17 Sat .+2d/4d>
+   :PROPERTIES:
+   :STYLE:    habit
+   :LAST_REPEAT: [2009-10-19 Mon 00:36]
+   :END:
+   - State "DONE"       from "TODO"       [2009-10-15 Thu]
+   - State "DONE"       from "TODO"       [2009-10-12 Mon]
+   - State "DONE"       from "TODO"       [2009-10-10 Sat]
+   - State "DONE"       from "TODO"       [2009-10-04 Sun]
+   - State "DONE"       from "TODO"       [2009-10-02 Fri]
+   - State "DONE"       from "TODO"       [2009-09-29 Tue]
+   - State "DONE"       from "TODO"       [2009-09-25 Fri]
+   - State "DONE"       from "TODO"       [2009-09-19 Sat]
+   - State "DONE"       from "TODO"       [2009-09-16 Wed]
+   - State "DONE"       from "TODO"       [2009-09-12 Sat]
+** priorities
+C-c , (org-priority)
+** breaking down tasks into subtasks
+*** Organize Party [60%]
+:PROPERTIES:
+:COOKIE_DATA: todo recursive
+:END:
+**** TODO Call people [1/2]
+***** TODO Peter
+***** DONE Sarah
+**** DONE Buy food
+**** DONE Talk to neighbor
+** checboxes
+C-c C-c (org-toggle-checkbox)
+*** TODO Organize party [3/4]
+  - [X] call people [3/3]
+    - [X] Peter
+    - [X] Sarah
+    - [X] Sam
+  - [X] order food
+  - [ ] think about what music to play
+  - [X] talk to the neighbors
+* Tags
+** Tag inherritance
+*** Summary by Frank                                                :notes:
+#+FILETAGS: :Peter:Boss:Secret:
+** setting tags
+#+TAGS: @work @home @tennisclub
+#+TAGS: laptop car pc sailboat
+** tag hierarchy
+#+TAGS: [ Control : Context Task ]
+#+TAGS: [ Persp : Vision Goal AOF Project ]
+#+begin_src elisp
+(setq org-tag-alist '((:startgrouptag)
+                      ("GTD")
+                      (:grouptags)
+                      ("Control")
+                      ("Persp")
+                      (:endgrouptag)
+                      (:startgrouptag)
+                      ("Control")
+                      (:grouptags)
+                      ("Context")
+                      ("Task")
+                      (:endgrouptag)))
+#+end_src
+
+#+TAGS: { Context : @Home @Work @Call }
+
+#+TAGS: [ Vision : {V@.+} ]
+#+TAGS: [ Goal : {G@.+} ]
+#+TAGS: [ AOF : {AOF@.+} ]
+#+TAGS: [ Project : {P@.+} ]
+** tag serches
+C-c / m (org-match-sparse-tree)
+C-c \ (org-match-sparse-tree)
+M-x org-agenda m (org-tags-view)
+M-x org-agenda M (org-tags-view)
+* Properties and Columns
+- Property like tag but with a value
+- Property can be used to implement as very basic database
+** property syntax
+
+#+PROPERTY: var  foo=1
+#+PROPERTY: var+ bar=2
+
+*** CD collection
+:PROPERTIES:
+:NDisks_ALL:  1 2 3 4
+:Publisher_ALL: "Deutsche Grammophon" Philips EMI
+:END:
+**** Classic
+***** Goldberg Variations
+:PROPERTIES:
+:Title:    Goldberg Variations
+:Composer:  J.S. Bach
+:Artist:    Glenn Gould
+:Publisher: Deutsche Grammophon
+:NDisks:    1
+:END:
+** special properties
+https://orgmode.org/manual/Special-Properties.html
+** property searches
+C-c / m or C-c \ (org-match-sparse-tree)
+** property inheritance
+COLUMNS
+CATEGORY
+ARCHIVE
+LOGGING
+** column view
+*** Degining columns
+**** Scope of column definitions
+#+COLUMNS: %25ITEM %TAGS %PRIORITY %TODO
+***** Top node for columns view
+:PROPERTIES:
+:COLUMNS: %25ITEM %TAGS %PRIORITY %TODO
+:END:
+**** Column attributes
+%[WIDTH]PROPERTY[(TITLE)][{SUMMARY-TYPE}]
+*** Using column view
+C-c C-x C-c (org-columns)
+C-c C-c q
+* Dates and Times
+** timestamps
+<2006-11-01 Wed 19:15>
+<2006-11-02 Thu 20:00-22:00>
+<2007-05-16 Wed 12:30 +1w>
+<2004-08-23 Mon>--<2004-08-26 Thu>
+[2006-11-01 Wed] @@commnet: Inactive timestamp@@
+*** 22:00-23:00 The nerd meeting on every 2nd Thursday of the month
+** creating timestamps
+C-c . (org-time-stamp)
+C-c ! (org-time-stamp-inactive)
+C-c C-c
+C-c < (org-date-from-calendar)
+C-c > (org-goto-calendar)
+C-c C-o (org-open-at-point)
+*** The date/time prompt
+https://orgmode.org/manual/The-date_002ftime-prompt.html
+** dealines and scheduling
+DEADLINE
+SCHEDULED
+*** inserting dealine/schedule
+*** repeated tasks
+** clocking work time
+** effort estimates
+** taking notes with a relative timer
+* Refiling and Archiving
+** refile and copy
+** archiving
+* Caputure and Attachments
+** caputure
+https://www.zmonster.me/2018/02/28/org-mode-capture.html#orgb608172
+** attachements
+** rss feeds
+* Agenda View
+** agenda files
+** agenda dispatcher
+** built-in agenda views
+** presentation and sorting
+** commands in the agenda buffer
+** custom agenda views
+** exporting agenda views
+** using column view in the agenda
+* Markdup for rich contens
+** paragraphs
+** emphasis and monospace
+** subsciprts and superscipts
+** special symbols
+** embedded latex
+\begin{equation}                        % arbitrary environments,
+x=\sqrt{b}                              % even tables, figures
+\end{equation}                          % etc
+
+If $a^2=b$ and \( b=2 \), then the solution must be
+either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
+** literal examples
+** images
+** captions
+** horizontal rules
+** creating footnotes
+* Exporting
+* Publishing
+** completion
+** structure templates
+** speed keys
+** a cleanner outline view
+** execute commanfs in the active region
+** dynamic healine numbering
+** the very budy C-c C-c key
+** summary of in-buffer settings
+** org syntax
+* Citation handling
+* [[denote:20210819T234801][Working with source code]]
+* Miscellaneous
+* Appendix A Hacking
+** [[denote:20220107T174909][Dynamic Blocks]]
+* Notes
+** [[denote:20211002T111759][Org-mode to website]]
+** include code
+=#+INCLUDE: "./src/main.rs" :lines "1-4" src rust=
+** workflow
+https://emacs-china.org/t/emacs-org/15069
+** src_sh
+*** user-error: Inline error: multiline result cannot be used
+** Image
+https://orgmode.org/worg/org-tutorials/images-and-xhtml-export.html
+** Commands
+*** org-mark-ring-goto
+goback to postion
+** Ecosystem
+*** [[denote:20211001T090001][Org-Agenda]]
+*** [[denote:20210819T234801][Org-babel]]
+*** [[denote:20211001T090053][Org-habit]]
+*** [[denote:20210819T234232][Org-roam]]
+*** [[denote:20210822T215950][org-anki]]
+*** [[denote:20210824T073903][org-pomodoro]]
+*** [[denote:20210918T093255][org-ref]]
+*** org-edit-src-code
+*** Org-download
+*** Org-journal
+*** Org-noter
+** org-macro--get-property
+** https://blog.jethro.dev/posts/org_mode_workflow_preview/
