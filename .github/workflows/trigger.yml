@@ -12,6 +12,6 @@ jobs:
       - name: trigger
         uses: peter-evans/repository-dispatch@v3
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.NOTES }}
           repository: felixmurraytang/www
           event-type: notes-update
