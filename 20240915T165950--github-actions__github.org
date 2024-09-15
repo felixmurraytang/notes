@@ -1,0 +1,6 @@
+#+title:      github actions
+#+date:       [2024-09-15 Sun 16:59]
+#+filetags:   :github:
+#+identifier: 20240915T165950
+
+https://www.nieknijland.nl/blog/how-to-trigger-a-github-action-workflow-in-another-repository

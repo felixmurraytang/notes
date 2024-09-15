@@ -1,0 +1,5 @@
+#+title:      vs code
+#+date:       [2024-09-15 Sun 18:41]
+#+filetags:   :editor:
+#+identifier: 20240915T184115
+
