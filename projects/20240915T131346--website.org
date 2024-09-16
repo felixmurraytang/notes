@@ -3,9 +3,26 @@
 #+filetags:   
 #+identifier: 20240915T131346
 
-i need a website to share my contents.
+I create a website to share my contents. There are two part of this project.
 
-what i want to share?
+* Website
+Create a page to sharing contents to the Internet.
 
-- notes
-- articles
+** /
+Home page.
+
+** /notes
+list all notes, including sub path's contents.
+
+** /notes/projects
+
+** lib/
+*** fix keywords issue
+- #+date
+- #+filetags
+
+*** link
+*** backlink
+
+* Notes
+Simply take notes.

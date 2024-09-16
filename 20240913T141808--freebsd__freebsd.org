@@ -27,4 +27,4 @@ firewall that i think is easier then iptables.
 the most clear package management i used.
 
 *** the only package i used are ~doas~ and ~tmux~.
-*** TODO learn how to pack
+*** TODO learn how to pack software
