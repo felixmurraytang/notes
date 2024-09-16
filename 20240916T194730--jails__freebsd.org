@@ -1,0 +1,8 @@
+#+title:      jails
+#+date:       [2024-09-16 Mon 19:47]
+#+filetags:   :freebsd:
+#+identifier: 20240916T194730
+
+[[denote:20240913T141808][freebsd]] jails is my new favorite application level virtulization.
+
+I install all software with jails.

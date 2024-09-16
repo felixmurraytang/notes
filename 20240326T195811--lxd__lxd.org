@@ -1,6 +1,6 @@
 #+title:      lxd
 #+date:       [2024-03-26 Tue 19:58]
-#+filetags:   :lxd:
+#+filetags:   :lxd:ubuntu:
 #+identifier: 20240326T195811
 
 I have chosen LXD as my virtualization and isolation solution because it's exceptionally suited for creating development sandboxes. Its ability to quickly test something in an isolated environment is a major advantage. Additionally, it's lightweight compared to a full virtual machine, with the creation of an LXC container taking just a few seconds through a single command.
@@ -18,3 +18,5 @@ However, there are some disadvantages to note:
 
 - Running it similarly to Docker, Podman, or MicroK8s may require additional configurations. To keep things simple, I use the ~--vm~ option with LXD to create a full virtual machine instead of the default container.
 - LXD seems to be officially supported only through ~Snap~, which might not be very common. However, this point is less of a concern for me personally, especially since Ubuntu is my favorite Linux distribution (excluding specialized distributions like Gentoo, Guix, or LFS 😂).
+
+I prefer to use [[denote:20240913T141808][freebsd]] [[denote:20240916T194730][jails]] now.
