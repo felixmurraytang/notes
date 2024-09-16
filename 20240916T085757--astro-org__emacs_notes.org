@@ -1,0 +1,37 @@
+#+title:      astro-org
+#+date:       [2024-09-16 Mon 08:57]
+#+filetags:   :emacs:notes:
+#+identifier: 20240916T085757
+
+#+begin_src
+VFile {
+  cwd: '/Users/felix/workspaces/www',
+  data: {
+    astro: { frontmatter: [Object], ids: {} },
+    keywords: {
+      title: 'emacs',
+      date: '2024-04-01',
+      filetags: [Array],
+      identifier: '20240401T184455'
+    }
+  },
+  history: [
+    '/Users/felix/workspaces/www/src/content/notes/20240401T184455--emacs__emacs.org'
+  ],
+  messages: [],
+  value: '#+title:      emacs\n' +
+    '#+date:       [2024-04-01 Mon 18:44]\n' +
+    '#+filetags:   :emacs:\n' +
+    '#+identifier: 20240401T184455\n' +
+    '\n' +
+    '* Dired Ignore\n' +
+    '#+begin_src emacs-lisp\n' +
+    '  (setq dired-omit-files "\\\\.dir-locals.el")\n' +
+    "  (add-hook 'dired-mode-hook (lambda () (dired-omit-mode)))\n" +
+    "  (add-hook 'dired-mode-hook 'auto-revert-mode)\n" +
+    '#+end_src\n' +
+    '\n' +
+    '#+RESULTS:\n' +
+    '| auto-revert-mode | (lambda nil (dired-omit-mode)) | denote-dired-mode-in-directories |\n'
+}
+#+end_src

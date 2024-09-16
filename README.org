@@ -1,0 +1,90 @@
+#+title: Curiosity Unleashed: Dive into My Notes
+#+date: [2024-09-16 Mon]
+
+Welcome, inquisitive minds! I'm Felix Murray Tang, a creator and innovator based in Hangzhou, China. This is my digital garden of thoughts, insights, and musings for those who love to explore.
+
+I'm passionate about exploring various fields, including programming, electronics, and mechanical engineering. My mission is to share knowledge, inspire creativity, and foster a community of lifelong learners.
+
+When I'm not tinkering with technology, you'll likely find me:
+- Running, trail running, or hiking in nature
+- Delving into history and geography
+- Expanding my understanding of universal aspects of human knowledge
+- Spending time with my adorable (albeit lazy) cat 🐾
+
+* What I'm Doing
+** Software
+I'm captivated by programming because it empowers me to transform ideas into reality and tackle intricate challenges with elegance and efficiency.
+
+*** Personal Website
+- Current Project: Creating a basic website with Astro
+- Goal: Write and publish notes daily
+
+*** FreeBSD
+- Using FreeBSD as my main server operating system
+- Running on a mini PC to host Jails and Bhyve VMs
+- Exploring advanced networking capabilities and security features
+
+*** Emacs
+- [Consider adding specific Emacs-related activities or goals]
+
+** Electronics
+- Learning about microcontrollers, circuits, and electronics
+- Focusing on PCB design using [[https://kicad.org][KiCad]]
+- Recent Achievement: Completed my first custom PCB design
+
+** Mechanics
+- Building things with my hands using [[https://freecad.org][FreeCAD]] for design
+- New Tool: Recently acquired a 3D printer as a birthday gift
+- Current Project: Designing and printing cases for electronic projects
+
+** Personal Development
+*** Reading
+- Treating reading as a long-term project
+- Goal: Read at least 1 hour daily
+- Current Book: [Insert current read]
+
+*** Physical Activities
+**** Running
+- Weekly Goal: 30 km
+- Recent Achievement: Completed a half-marathon
+
+**** Hiking and Trail Running
+- Monthly Goal: One long trail run or hike
+- Next Adventure: Cross city hiking or running
+
+** Content Creation
+*** Text
+- Main Focus: Daily notes and articles on this website
+
+*** YouTube
+- Coming Soon
+
+* Notes
+I keep all my content in one place for simplicity and ease of access. Some /meta/ notes serve as indexes for related topics, helpful for quick navigation.
+
+Explore [[/notes][all my notes]] to discover unexpected connections across various topics!
+
+Here I list some /meta/ pages:
+- [[/notes/projects][Projects]]
+- [[/notes/book-notes][Book Notes]]
+
+* About this Website
+I created this website to share almost all my notes with the internet. I hope this content could help people who need it. Most importantly, I hope this public platform will encourage me to continue writing and sharing.
+
+** Technology Stack
+- Framework: [[https://astro.build][Astro]] (chosen for flexibility and performance)
+- CSS: Minimalist approach using the browser's user agent stylesheet
+- Content Parser: [[https://github.com/rasendubi/uniorg/tree/master/packages/astro-org][astro-org]] for org-mode compatibility
+
+** Open Source
+This website's [[https://github.com/felixmurraytang/www][source code]] and [[https://github.com/felixmurraytang/notes][content]] are available on GitHub.
+
+** Workflow
+To keep content sharing easy, I've designed a streamlined workflow:
+1. Capture ideas with various tools and consolidate them into org-mode notes
+2. Compose notes using [[https://orgmode.org][org-mode]] in [[https://www.gnu.org/software/emacs/][Emacs]], utilizing [[https://github.com/protesilaos/denote][denote]] for simple management
+3. Use GitHub Actions repository-dispatch to trigger the source code's build when the notes repository is updated
+
+This efficient process allows me to focus on creating content while maintaining an up-to-date website.
+
+Feel free to explore and discover more about my work and interests!
