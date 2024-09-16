@@ -11,8 +11,8 @@ When I'm not tinkering with technology, you'll likely find me. Running, trail ru
 I keep all my content in one place for simplicity and ease of access. Some /meta/ notes serve as indexes for related topics, helpful for quick navigation.
 
 Here are some fixed paths.
-- [[/notes][/notes]] default note location
-- [[/notes/projects][/notes/projects]] list projects
+- [[/notes][/notes]]
+- [[/notes/projects][/notes/projects]]
 
 And some /meta/ pages:
 - 
