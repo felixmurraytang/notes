@@ -22,8 +22,7 @@ And some /meta/ pages:
 I'm captivated by programming because it empowers me to transform ideas into reality and tackle intricate challenges with elegance and efficiency.
 
 *** Personal Website
-- Current Project: Creating a basic website with Astro
-- Goal: Write and publish notes daily
+This website, creating with Astro. still has many thing to do. website is a content container and sharing window. So by focus on content creating.
 
 *** FreeBSD
 - Using FreeBSD as my main server operating system
@@ -39,13 +38,16 @@ I try to integrate all my workflow to Emacs. I love the simple and text base phi
 - Focusing on PCB design using [[https://kicad.org][KiCad]]
 - Recent Achievement: Completed my first custom PCB design
 
+Like many people my first microcontrollers is AT89C51. Then I use Arduino and Raspberry Pi. Recently I tried to design a simple PCB base on =RP2040= But almost failed due to not familer with PCB design I think. By the way I really confident with my PCB solid skill.
+
 ** Mechanics
 - Building things with my hands using [[https://freecad.org][FreeCAD]] for design
 - New Tool: Recently acquired a 3D printer as a birthday gift
 
+Mechanical design is a major but abondoned. It not means I have no interested for it.
+
 ** Robotics
-Like everyone, I have a robot dream.
-I have used =ROS=. And will do more in the feature.
+Like everyone, I have a robot dream. Because Robot natively cross field. I give it a seprate catalog. I have used =ROS=. And will do more in the feature.
 
 ** Personal Development
 *** Reading
@@ -88,3 +90,17 @@ To keep content sharing easy, I've designed a streamlined workflow:
 This efficient process allows me to focus on creating content while maintaining an up-to-date website.
 
 Feel free to explore and discover more about my work and interests!
+
+** Things to do
+*** /home
+*** /notes
+*** style
+add style for emacs
+*** highlight
+*** katex
+*** resources
+resource like img, pdf ...
+
+*** TODO link
+*** TODO backlink
+*** TODO filter & query notes

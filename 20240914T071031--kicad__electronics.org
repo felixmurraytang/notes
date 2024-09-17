@@ -1,6 +1,6 @@
 #+title:      kicad
 #+date:       [2024-09-14 Sat 07:10]
-#+filetags:   
+#+filetags:   :electronics:
 #+identifier: 20240914T071031
 
 #+begin_src bash
