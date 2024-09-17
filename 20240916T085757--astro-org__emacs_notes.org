@@ -35,3 +35,104 @@ VFile {
     '| auto-revert-mode | (lambda nil (dired-omit-mode)) | denote-dired-mode-in-directories |\n'
 }
 #+end_src
+
+#+begin_src
+  {
+  id: 'README.org',
+  slug: 'readme',
+  body: '#+title: Curiosity Unleashed: Dive into My Notes\n' +
+    '#+date: [2024-09-16 Mon]\n' +
+    '\n' +
+    "Welcome, inquisitive minds! I'm Felix Murray Tang, a creator and innovator based in Hangzhou, China. This is my digital garden of thoughts, insights, and musings for those who love to explore.\n" +
+    '\n' +
+    "I'm passionate about exploring various fields, including programming, electronics, and mechanical engineering. My mission is to share knowledge, inspire creativity, and foster a community of lifelong learners.\n" +
+    '\n' +
+    "When I'm not tinkering with technology, you'll likely find me. Running, trail running, or hiking in nature. Delving into history and geography. Expanding my understanding of universal aspects of human knowledge. Spending time with my adorable (albeit lazy) cat 🐾.\n" +
+    '\n' +
+    '* What contents\n' +
+    'I keep all my content in one place for simplicity and ease of access. Some /meta/ notes serve as indexes for related topics, helpful for quick navigation.\n' +
+    '\n' +
+    'Here are some fixed paths.\n' +
+    '- [[/notes][/notes]]\n' +
+    '- [[/notes/projects][/notes/projects]]\n' +
+    '\n' +
+    'And some /meta/ pages:\n' +
+    '- \n' +
+    '   \n' +
+    "* What I'm Doing\n" +
+    '** Software\n' +
+    "I'm captivated by programming because it empowers me to transform ideas into reality and tackle intricate challenges with elegance and efficiency.\n" +
+    '\n' +
+    '*** Personal Website\n' +
+    '- Current Project: Creating a basic website with Astro\n' +
+    '- Goal: Write and publish notes daily\n' +
+    '\n' +
+    '*** FreeBSD\n' +
+    '- Using FreeBSD as my main server operating system\n' +
+    '- Running on a mini PC to host Jails and Bhyve VMs\n' +
+    '- Exploring advanced networking capabilities and security features\n' +
+    '\n' +
+    '*** Emacs\n' +
+    '- [Consider adding specific Emacs-related activities or goals]\n' +
+    '\n' +
+    '** Electronics\n' +
+    '- Learning about microcontrollers, circuits, and electronics\n' +
+    '- Focusing on PCB design using [[https://kicad.org][KiCad]]\n' +
+    '- Recent Achievement: Completed my first custom PCB design\n' +
+    '\n' +
+    '** Mechanics\n' +
+    '- Building things with my hands using [[https://freecad.org][FreeCAD]] for design\n' +
+    '- New Tool: Recently acquired a 3D printer as a birthday gift\n' +
+    '- Current Project: Designing and printing cases for electronic projects\n' +
+    '\n' +
+    '** Personal Development\n' +
+    '*** Reading\n' +
+    '- Treating reading as a long-term project\n' +
+    '- Goal: Read at least 1 hour daily\n' +
+    '- Current Book: [Insert current read]\n' +
+    '\n' +
+    '*** Physical Activities\n' +
+    '**** Running\n' +
+    '- Weekly Goal: 30 km\n' +
+    '- Recent Achievement: Completed a half-marathon\n' +
+    '\n' +
+    '**** Hiking and Trail Running\n' +
+    '- Monthly Goal: One long trail run or hike\n' +
+    '- Next Adventure: Cross city hiking or running\n' +
+    '\n' +
+    '** Content Creation\n' +
+    '*** Text\n' +
+    '- Main Focus: Daily notes and articles on this website\n' +
+    '\n' +
+    '*** YouTube\n' +
+    '- Coming Soon\n' +
+    '\n' +
+    '* About this Website\n' +
+    'I created this website to share almost all my notes with the internet. I hope this content could help people who need it. Most importantly, I hope this public platform will encourage me to continue writing and sharing.\n' +
+    '\n' +
+    '** Technology Stack\n' +
+    '- Framework: [[https://astro.build][Astro]] (chosen for flexibility and performance)\n' +
+    "- CSS: Minimalist approach using the browser's user agent stylesheet\n" +
+    '- Content Parser: [[https://github.com/rasendubi/uniorg/tree/master/packages/astro-org][astro-org]] for org-mode compatibility\n' +
+    '\n' +
+    '** Open Source\n' +
+    "This website's [[https://github.com/felixmurraytang/www][source code]] and [[https://github.com/felixmurraytang/notes][content]] are available on GitHub.\n" +
+    '\n' +
+    '** Workflow\n' +
+    "To keep content sharing easy, I've designed a streamlined workflow:\n" +
+    '1. Capture ideas with various tools and consolidate them into org-mode notes\n' +
+    '2. Compose notes using [[https://orgmode.org][org-mode]] in [[https://www.gnu.org/software/emacs/][Emacs]], utilizing [[https://github.com/protesilaos/denote][denote]] for simple management\n' +
+    "3. Use GitHub Actions repository-dispatch to trigger the source code's build when the notes repository is updated\n" +
+    '\n' +
+    'This efficient process allows me to focus on creating content while maintaining an up-to-date website.\n' +
+    '\n' +
+    'Feel free to explore and discover more about my work and interests!\n',
+  collection: 'notes',
+  data: {
+    title: 'Curiosity Unleashed: Dive into My Notes',
+    date: 2024-09-16T00:00:00.000Z,
+    filetags: []
+  },
+  render: [AsyncFunction: render]
+}
+#+end_src
