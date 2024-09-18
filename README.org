@@ -1,13 +1,7 @@
 #+title: Felix Murray Tang: Innovator, Explorer, Lifelong Learner
 #+date: [2024-09-18 Wed 10:58]
 
-I'm Felix Murray Tang. Welcome to my digital realm! I'm an innovator, creator, and lifelong learner based in Hangzhou, China. This space is a reflection of my passions, projects, and the endless curiosity that drives me.
-
-I'm a multifaceted individual with a deep love for technology, nature, and knowledge. My background spans:
-
-- Programming: Transforming ideas into reality through code
-- Electronics: Designing circuits and PCBs to bring hardware to life
-- Mechanical Engineering: Building tangible solutions with my hands
+I'm Felix Murray Tang. Welcome to my digital realm! I'm an innovator, creator, and lifelong learner based in Hangzhou, China. This space is a reflection of my passions, projects, and the endless curiosity that drives me. I'm a multifaceted individual with a deep love for technology, nature, and knowledge.
 
 * My Current Endeavors
 
