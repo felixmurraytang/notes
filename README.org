@@ -1,105 +1,74 @@
-#+title: Curiosity Unleashed: Dive into My Notes
-#+date: [2024-09-17 Tue 15:47]
+#+title: Felix Murray Tang: Innovator, Explorer, Lifelong Learner
+#+date: [2024-09-18 Wed 10:58]
 
-Welcome, inquisitive minds! I'm Felix Murray Tang, a creator and innovator based in Hangzhou, China. This is my digital garden of thoughts, insights, and musings for those who love to explore.
+Hello, World! I'm Felix Murray Tang. Welcome to my digital realm! I'm an innovator, creator, and lifelong learner based in Hangzhou, China. This space is a reflection of my passions, projects, and the endless curiosity that drives me.
 
-I'm passionate about exploring various fields, including programming, electronics, and mechanical engineering. My mission is to share knowledge, inspire creativity, and foster a community of lifelong learners.
+I'm a multifaceted individual with a deep love for technology, nature, and knowledge. My background spans:
 
-When I'm not tinkering with technology, you'll likely find me. Running, trail running, or hiking in nature. Delving into history and geography. Expanding my understanding of universal aspects of human knowledge. Spending time with my adorable (albeit lazy) cat.
+- Programming: Transforming ideas into reality through code
+- Electronics: Designing circuits and PCBs to bring hardware to life
+- Mechanical Engineering: Building tangible solutions with my hands
 
-* What are this site's contents
-I keep all my content in one place for simplicity and ease of access. Some /meta/ notes serve as indexes for related topics, helpful for quick navigation.
+When I'm not immersed in the world of tech, you'll find me:
 
-#+begin_quote
- [[/notes][/notes]]
-#+end_quote
+- Running trails or hiking, embracing the beauty of nature
+- Delving into books, exploring history and geography
+- Cuddling with my adorable (albeit lazy) cat
 
-And some /meta/ pages:
-   
-* What I'm doing
-** Software
-I'm captivated by programming because it empowers me to transform ideas into reality and tackle intricate challenges with elegance and efficiency.
+* My Current Endeavors
 
-*** Personal Website
-This website, creating with Astro. still has many thing to do. website is a content container and sharing window. So by focus on content creating.
+** Software Adventures
+- Crafting this website using Astro, focusing on content creation
+- Mastering FreeBSD for server management and advanced networking
+- Integrating my entire workflow into Emacs, embracing simplicity
 
-*** FreeBSD
-- Using FreeBSD as my main server operating system
-- Running on a mini PC to host Jails and Bhyve VMs
-- Exploring advanced networking capabilities and security features
-  - I love ~pf~
+** Hardware Explorations
+- Designing custom PCBs with KiCad (recently completed my first design!)
+- 3D printing and modeling with FreeCAD
+- Dabbling in robotics, with plans to dive deeper into ROS
 
-*** Emacs
-I try to integrate all my workflow to Emacs. I love the simple and text base philosophy.
+** Personal Growth
+- Reading daily (at least 1 hour) as a long-term project
+- Maintaining an active lifestyle:
+  - Running 30km weekly
+  - Monthly long trail runs or hikes
+- Content creation:
+  - Writing daily notes and articles
+  - Planning to launch a YouTube channel (stay tuned!)
 
-** Electronics
-- Learning about microcontrollers, circuits, and electronics
-- Focusing on PCB design using [[https://kicad.org][KiCad]]
-- Recent Achievement: Completed my first custom PCB design
+* Why This Website?
 
-Like many people my first microcontrollers is AT89C51. Then I use Arduino and Raspberry Pi. Recently I tried to design a simple PCB base on =RP2040= But almost failed due to not familer with PCB design I think. By the way I really confident with my PCB solid skill.
+This digital garden serves multiple purposes:
+1. To share my knowledge and insights with the world
+2. To inspire creativity and foster a community of learners
+3. To challenge myself to continue writing and growing
 
-** Mechanics
-- Building things with my hands using [[https://freecad.org][FreeCAD]] for design
-- New Tool: Recently acquired a 3D printer as a birthday gift
+** Technical Details
+- Built with Astro for flexibility and performance
+- Content written in org-mode, parsed with astro-org
+- Open-source: both [[https://github.com/felixmurraytang/www][website code]] and [[https://github.com/felixmurraytang/notes][content]] available on GitHub
 
-Mechanical design is a major but abondoned. It not means I have no interested for it.
+** My Workflow
+1. Capture ideas using various tools
+2. Consolidate into org-mode notes using Emacs and denote
+3. Automate website updates through GitHub Actions
 
-** Robotics
-Like everyone, I have a robot dream. Because Robot natively cross field. I give it a seprate catalog. I have used =ROS=. And will do more in the feature.
+* Join Me on This Journey
 
-** Personal Development
-*** Reading
-- Treating reading as a long-term project
-- Goal: Read at least 1 hour daily
+I believe in the power of shared knowledge and continuous learning. As you explore this site, I hope you'll find inspiration, learn something new, and perhaps even contribute to our collective understanding.
 
-*** Physical Activities
-**** Running
-- Weekly Goal: 30 km
-- Recent Achievement: Completed a half-marathon
+Feel free to dive into my [[/notes][notes]], explore my projects, or reach out for collaboration. Let's innovate, create, and grow together!
 
-**** Hiking and Trail Running
-- Monthly Goal: One long trail run or hike
-- Next Adventure: Cross city hiking or running
+* TODO List (Because Growth Never Stops)
+- Enhance website styling
+- Implement syntax highlighting
+- Add LaTeX support with KaTeX
+- Improve resource management (images, PDFs)
+- Develop better linking and backlinking systems
+- Create a notes filtering and query system
 
-** Content Creation
-*** Text
-- Main Focus: Daily notes and articles on this website
+Thank you for visiting. Let's embark on this adventure of curiosity and creation!
 
-*** YouTube
-Coming Soon
-
-* What's this website
-I created this website to share almost all my notes with the internet. I hope this content could help people who need it. Most importantly, I hope this public platform will encourage me to continue writing and sharing.
-
-** Technology Stack
-- Framework: [[https://astro.build][Astro]] (chosen for flexibility and performance)
-- CSS: Minimalist approach using the browser's user agent stylesheet
-- Content Parser: [[https://github.com/rasendubi/uniorg/tree/master/packages/astro-org][astro-org]] for org-mode compatibility
-
-** Open Source
-This website's [[https://github.com/felixmurraytang/www][source code]] and [[https://github.com/felixmurraytang/notes][content]] are available on GitHub.
-
-** Workflow
-To keep content sharing easy, I've designed a streamlined workflow:
-1. Capture ideas with various tools and consolidate them into org-mode notes
-2. Compose notes using [[https://orgmode.org][org-mode]] in [[https://www.gnu.org/software/emacs/][Emacs]], utilizing [[https://github.com/protesilaos/denote][denote]] for simple management
-3. Use GitHub Actions repository-dispatch to trigger the source code's build when the notes repository is updated
-
-This efficient process allows me to focus on creating content while maintaining an up-to-date website.
-
-Feel free to explore and discover more about my work and interests!
-
-** Things to do
-*** /home
-*** /notes
-*** style
-add style for emacs
-*** highlight
-*** katex
-*** resources
-resource like img, pdf ...
-
-*** TODO link
-*** TODO backlink
-*** TODO filter & query notes
+* Contacts
+- [[https://github.com/felixmurraytang][GitHub]]
+- [[https://x.com/FelixMTang][X]]
