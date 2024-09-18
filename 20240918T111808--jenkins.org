@@ -1,0 +1,6 @@
+#+title:      jenkins
+#+date:       [2024-09-18 Wed 11:18]
+#+filetags:   
+#+identifier: 20240918T111808
+
+jenkins

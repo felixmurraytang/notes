@@ -1,0 +1,5 @@
+#+title:      my workflow with freebsd, emacs, and so on
+#+date:       [2024-09-18 Wed 11:20]
+#+filetags:   :blog:
+#+identifier: 20240918T112047
+

@@ -1,0 +1,6 @@
+#+title:      ansible
+#+date:       [2024-09-18 Wed 11:19]
+#+filetags:   
+#+identifier: 20240918T111910
+
+ansible
