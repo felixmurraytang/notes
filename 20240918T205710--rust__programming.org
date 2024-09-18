@@ -1,0 +1,5 @@
+#+title:      rust
+#+date:       [2024-09-18 Wed 20:57]
+#+filetags:   :programming:
+#+identifier: 20240918T205710
+

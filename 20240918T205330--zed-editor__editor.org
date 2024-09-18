@@ -1,0 +1,6 @@
+#+title:      zed editor
+#+date:       [2024-09-18 Wed 20:53]
+#+filetags:   :editor:
+#+identifier: 20240918T205330
+
+* code
