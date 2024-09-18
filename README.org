@@ -5,9 +5,9 @@ Welcome, inquisitive minds! I'm Felix Murray Tang, a creator and innovator based
 
 I'm passionate about exploring various fields, including programming, electronics, and mechanical engineering. My mission is to share knowledge, inspire creativity, and foster a community of lifelong learners.
 
-When I'm not tinkering with technology, you'll likely find me. Running, trail running, or hiking in nature. Delving into history and geography. Expanding my understanding of universal aspects of human knowledge. Spending time with my adorable (albeit lazy) cat 🐾.
+When I'm not tinkering with technology, you'll likely find me. Running, trail running, or hiking in nature. Delving into history and geography. Expanding my understanding of universal aspects of human knowledge. Spending time with my adorable (albeit lazy) cat.
 
-* What's the contents
+* What are this site's contents
 I keep all my content in one place for simplicity and ease of access. Some /meta/ notes serve as indexes for related topics, helpful for quick navigation.
 
 #+begin_quote
@@ -15,7 +15,6 @@ I keep all my content in one place for simplicity and ease of access. Some /meta
 #+end_quote
 
 And some /meta/ pages:
-- Comming soon
    
 * What I'm doing
 ** Software
