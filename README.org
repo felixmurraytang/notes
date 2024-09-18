@@ -1,9 +1,14 @@
 #+title: Felix Murray Tang: Innovator, Explorer, Lifelong Learner
 #+date: [2024-09-18 Wed 10:58]
 
-I'm Felix Murray Tang. Welcome to my digital realm! I'm an innovator, creator, and lifelong learner based in Hangzhou, China. This space is a reflection of my passions, projects, and the endless curiosity that drives me. I'm a multifaceted individual with a deep love for technology, nature, and knowledge.
+I'm Felix Murray Tang. Welcome to my digital realm! I'm an innovator, creator, and lifelong learner. This space is a reflection of my passions, projects, and the endless curiosity that drives me. I'm a multifaceted individual with a deep love for technology, nature, and knowledge.
 
-* My Current Endeavors
+This website has many contents,
+
+- [[/notes][/notes]] All TEXT contents are here
+- [[/podcasts][/podcasts]]
+
+* What I'm Doing?
 
 ** Software Adventures
 - Crafting this website using Astro, focusing on content creation
@@ -41,13 +46,7 @@ This digital garden serves multiple purposes:
 2. Consolidate into org-mode notes using Emacs and denote
 3. Automate website updates through GitHub Actions
 
-* Join Me on This Journey
-
-I believe in the power of shared knowledge and continuous learning. As you explore this site, I hope you'll find inspiration, learn something new, and perhaps even contribute to our collective understanding.
-
-Feel free to dive into my [[/notes][notes]], explore my projects, or reach out for collaboration. Let's innovate, create, and grow together!
-
-* TODO List (Because Growth Never Stops)
+** TODO List (Because Growth Never Stops)
 - Enhance website styling
 - Implement syntax highlighting
 - Add LaTeX support with KaTeX
