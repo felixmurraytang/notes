@@ -9,7 +9,4 @@ I am trying a demo,
 
 The =demo_package= on =ros/src=
 
-* TODO Meet issue
-~felix@ros:~/ros$ ros2 run demo_package publisher
-No executable found~
-
+* TODO 

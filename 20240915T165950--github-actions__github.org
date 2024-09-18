@@ -3,4 +3,7 @@
 #+filetags:   :github:
 #+identifier: 20240915T165950
 
+* [[https://github.com/marketplace/actions/repository-dispatch][repository-dispatch]]
+action to trigger another action.
+
 https://www.nieknijland.nl/blog/how-to-trigger-a-github-action-workflow-in-another-repository

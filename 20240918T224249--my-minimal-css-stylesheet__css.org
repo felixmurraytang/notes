@@ -1,0 +1,11 @@
+#+title:      my minimal css stylesheet
+#+date:       [2024-09-18 Wed 22:42]
+#+filetags:   :css:
+#+identifier: 20240918T224249
+
+[[https://github.com/felixmurraytang/www/blob/main/src/styles/global.css][global.css]]
+
+* philosohpy
+** minimal
+** only for html tag. do not use class or id
+** semantic html base

@@ -6,8 +6,12 @@
 I use my poor ASUS PB62 Mini PC as my private cloud server.
 
 * What OS I use?
-Ubuntu 22.04.4 LTS server
+FreeBSD
 
 * What I installed and configued?
-ALl on =LXD=
-** [[denote:20240326T195811][lxd]]
+I only installed =doas= and =tmux= with =pkg=
+All other software installed in [[denote:20240916T194730][jails]].
+
+- bhyve
+- freebsd
+- 

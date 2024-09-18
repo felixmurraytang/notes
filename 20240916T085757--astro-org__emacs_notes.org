@@ -3,6 +3,9 @@
 #+filetags:   :emacs:notes:
 #+identifier: 20240916T085757
 
+* vfile
+where data.astro.frontmatter for astro.
+
 #+begin_src
 VFile {
   cwd: '/Users/felix/workspaces/www',
@@ -36,6 +39,7 @@ VFile {
 }
 #+end_src
 
+* single =note= content
 #+begin_src
   {
   id: 'README.org',

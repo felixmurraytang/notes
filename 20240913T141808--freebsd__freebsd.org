@@ -14,16 +14,16 @@ freebsd is my new base os. i love it because,
 
 what i use.
 
-** jails
+* jails
 primary method to deploy software or any other tasks.
 
-*** bhyve
+** bhyve
 i use bhyve inside jails becasue i what bhyve only used as jail's fallback.
 
-** pf
+* pf
 firewall that i think is easier then iptables.
 
-** pkg
+* pkg
 the most clear package management i used.
 
 *** the only package i used are ~doas~ and ~tmux~.

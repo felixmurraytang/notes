@@ -3,6 +3,4 @@
 #+filetags:   :electronics:
 #+identifier: 20240914T071031
 
-#+begin_src bash
-  echo hi
-#+end_src
+PCB design tool.

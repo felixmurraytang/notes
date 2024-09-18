@@ -3,3 +3,6 @@
 #+filetags:   :freebsd:
 #+identifier: 20240916T211626
 
+freebsd virtulaztion.
+
+* 

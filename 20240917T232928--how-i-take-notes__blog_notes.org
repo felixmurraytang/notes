@@ -3,3 +3,4 @@
 #+filetags:   :blog:notes:
 #+identifier: 20240917T232928
 
+how i take and organize notes. 

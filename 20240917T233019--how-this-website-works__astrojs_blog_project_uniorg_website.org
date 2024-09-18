@@ -3,6 +3,5 @@
 #+filetags:   :astrojs:blog:project:uniorg:website:
 #+identifier: 20240917T233019
 
-* website
-
-* notes
+* how this website works
+* [[denote:20240917T232928][how i take notes]]
