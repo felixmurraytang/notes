@@ -1,0 +1,18 @@
+#+title:      meow
+#+date:       [2024-09-19 Thu 20:58]
+#+filetags:   :emacs:
+#+identifier: 20240919T205850
+
+[[https://github.com/meow-edit/meow/tree/master][meow]] is a emacs model editing tool.
+
+* config
+* states
+- insert
+- normal
+- motion for special mode like dired, proced etc
+- keypad
+- beacon
+
+* design
+1. select
+
