@@ -1,0 +1,6 @@
+#+title:      zfs
+#+date:       [2024-09-19 Thu 21:37]
+#+filetags:   :freebsd:fs:
+#+identifier: 20240919T213711
+
+zfs = file system + volume

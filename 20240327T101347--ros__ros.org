@@ -5,8 +5,7 @@
 
 Of course, ROS means ROS 2.
 
-I am trying a demo,
+* story with ros at university
+I first know ROS almost 10 years ago I think.
 
-The =demo_package= on =ros/src=
 
-* TODO 

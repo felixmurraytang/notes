@@ -11,7 +11,8 @@ freebsd is my new base os. i love it because,
    =freebsd-update IDS=
    i love the feeling that i can totally control my os.
    i can know where each file on os from easily which is difficult to do that on linux distribution.
-
+3. [[denote:20240919T213711][zfs]]
+   
 what i use.
 
 * jails

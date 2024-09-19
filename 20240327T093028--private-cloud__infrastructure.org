@@ -6,7 +6,7 @@
 I use my poor ASUS PB62 Mini PC as my private cloud server.
 
 * What OS I use?
-FreeBSD
+[[denote:20240913T141808][freebsd]] 
 
 * What I installed and configued?
 I only installed =doas= and =tmux= with =pkg=
@@ -14,4 +14,3 @@ All other software installed in [[denote:20240916T194730][jails]].
 
 - bhyve
 - freebsd
-- 

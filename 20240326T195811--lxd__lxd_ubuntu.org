@@ -17,6 +17,6 @@ I use LXD to do such things on my poor 4 CPU, 16 GiB Ausus Mini PC PB62. I alrea
 However, there are some disadvantages to note:
 
 - Running it similarly to Docker, Podman, or MicroK8s may require additional configurations. To keep things simple, I use the ~--vm~ option with LXD to create a full virtual machine instead of the default container.
-- LXD seems to be officially supported only through ~Snap~, which might not be very common. However, this point is less of a concern for me personally, especially since Ubuntu is my favorite Linux distribution (excluding specialized distributions like Gentoo, Guix, or LFS 😂).
+- LXD seems to be officially supported only through ~Snap~, which might not be very common. However, this point is less of a concern for me personally, especially since Ubuntu is my favorite Linux distribution (excluding specialized distributions like Gentoo, Guix, or LFS).
 
 I prefer to use [[denote:20240913T141808][freebsd]] [[denote:20240916T194730][jails]] now.
