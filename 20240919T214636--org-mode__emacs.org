@@ -1,0 +1,5 @@
+#+title:      org mode
+#+date:       [2024-09-19 Thu 21:46]
+#+filetags:   :emacs:
+#+identifier: 20240919T214636
+

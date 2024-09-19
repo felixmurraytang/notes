@@ -1,0 +1,5 @@
+#+title:      ipxe
+#+date:       [2024-09-19 Thu 21:55]
+#+filetags:   
+#+identifier: 20240919T215505
+

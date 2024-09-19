@@ -1,0 +1,5 @@
+#+title:      ubuntu
+#+date:       [2024-09-19 Thu 21:54]
+#+filetags:   :linux:
+#+identifier: 20240919T215435
+

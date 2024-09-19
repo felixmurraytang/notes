@@ -1,0 +1,5 @@
+#+title:      algorithm
+#+date:       [2024-09-19 Thu 21:53]
+#+filetags:   :algorithm:
+#+identifier: 20240919T215335
+

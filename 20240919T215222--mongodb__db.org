@@ -1,0 +1,5 @@
+#+title:      mongodb
+#+date:       [2024-09-19 Thu 21:52]
+#+filetags:   :db:
+#+identifier: 20240919T215222
+
