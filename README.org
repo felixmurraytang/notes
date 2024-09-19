@@ -6,7 +6,7 @@ I'm Felix Murray Tang. Welcome to my digital realm! I'm an innovator, creator, a
 This website has many contents,
 
 - [[/notes][/notes]] hold all text contents
-  - [[/notes/20240919T141316--projects__meta][/projects]]
+  - [[/notes/20240919T141316--projects__meta/][/projects]]
     
 - [[/podcasts][/podcasts]]
 
