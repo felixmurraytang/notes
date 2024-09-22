@@ -1,0 +1,49 @@
+#+title:      how i take notes
+#+date:       [2024-09-17 Tue 23:29]
+#+filetags:   :article:learning:notes:productiviting:
+#+identifier: 20240917T232928
+
+* Introduction
+In our fast-paced, information-rich world, effective note-taking has become an essential skill. This article explores my personal approach to note-taking, emphasizing its broad definition and the crucial steps that make it truly valuable.
+
+* Defining Notes: Beyond the Conventional
+To me, notes are more than just scribbles in a notebook. I define notes as any records I make, regardless of the medium or method. This inclusive definition encompasses:
+
+- Digital notes written with ~denote~ in =Emacs=
+- Voice memos recorded in Apple Journal
+- Keywords jotted down on paper
+- Any other method that helps capture information
+
+By broadening the definition of notes, we open ourselves to a more flexible and comprehensive approach to information capture.
+
+* The Tools of the Trade
+While the specific tools may vary, I find the following particularly useful:
+
+** Emacs with denote
+For structured, searchable digital notes
+
+** Apple Journal
+For quick audio recordings and on-the-go note-taking
+
+** Traditional pen and paper
+For times when digital tools aren't practical or when I need to sketch ideas
+
+* The Key to Effective Note-Taking: Review, Organize, Apply
+Taking notes is just the first step. What truly makes note-taking work is a three-part process:
+
+** Review
+Regularly revisiting your notes to reinforce learning and identify key ideas
+
+** Organize
+Structuring your notes in a way that makes sense to you, creating connections between different pieces of information
+
+** Apply
+Using your notes to make a difference in three critical areas:
+- Information: Enhancing your factual knowledge
+- Knowledge: Deepening your understanding of concepts and their relationships
+- Wisdom: Applying what you've learned to make better decisions and gain insights
+
+* Conclusion
+Effective note-taking is more than just recording information; it's a dynamic process that involves capturing, reviewing, organizing, and applying knowledge. By adopting a broad definition of notes and following a structured approach to working with them, we can transform simple records into powerful tools for personal and professional growth.
+
+Remember, the best note-taking system is the one that works for you. Experiment with different methods and tools until you find the approach that enhances your learning and productivity.
