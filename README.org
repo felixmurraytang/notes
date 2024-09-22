@@ -3,13 +3,15 @@
 
 I'm Felix Murray Tang. Welcome to my digital realm! I'm an innovator, creator, and lifelong learner. This space is a reflection of my passions, projects, and the endless curiosity that drives me. I'm a multifaceted individual with a deep love for technology, nature, and knowledge.
 
-This website has many contents,
+This website has many TEXT contents,
 
 - [[/notes/][notes]]
-- [[/blogs/][blogs]]
-- [[/projects/][projects]] to list all my personals
   
-- [[/podcasts][podcasts]]
+- [[/blog][blog]]
+- [[/project/][project]]
+  
+And audio contents [[/podcast][podcast]],
+And video contents [[/video][video]].
 
 * What I'm Doing?
 
