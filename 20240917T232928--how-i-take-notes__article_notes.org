@@ -1,6 +1,6 @@
 #+title:      how i take notes
 #+date:       [2024-09-17 Tue 23:29]
-#+filetags:   :blog:notes:
+#+filetags:   :article:notes:
 #+identifier: 20240917T232928
 
 how i take and organize notes. 

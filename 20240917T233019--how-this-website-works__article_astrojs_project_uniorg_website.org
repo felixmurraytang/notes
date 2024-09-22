@@ -1,6 +1,6 @@
 #+title:      how this website works
 #+date:       [2024-09-17 Tue 23:30]
-#+filetags:   :astrojs:blog:project:uniorg:website:
+#+filetags:   :article:astrojs:project:uniorg:website:
 #+identifier: 20240917T233019
 
 * how this website works
