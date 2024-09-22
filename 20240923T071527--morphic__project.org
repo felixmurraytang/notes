@@ -1,0 +1,6 @@
+#+title:      morphic
+#+date:       [2024-09-23 Mon 07:15]
+#+filetags:   :project:
+#+identifier: 20240923T071527
+
+[[https://github.com/miurla/morphic][morphic]] is ai powered search engine with a generative ui.

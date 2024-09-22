@@ -1,0 +1,18 @@
+#+title:      whisper
+#+date:       [2024-09-23 Mon 07:06]
+#+filetags:   :project:whisper:
+#+identifier: 20240923T070604
+
+* ui
+use next.js, v0
+
+- ? to record audio
+- ? to pre process audio
+
+- ? pacage as groq sdk
+  
+* backend
+- groq whisper api use to convert audio to text
+  may be use SSR
+- groq llama 3.1 use to help generate structured text
+- store?
