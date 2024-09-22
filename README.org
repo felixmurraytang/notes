@@ -5,8 +5,10 @@ I'm Felix Murray Tang. Welcome to my digital realm! I'm an innovator, creator, a
 
 This website has many contents,
 
-- [[/notes][notes]]
-- [[/notes/20240919t141316--projects__meta/][projects]]
+- [[/notes/][notes]]
+- [[/blogs/][blogs]]
+- [[/projects/][projects]] to list all my personals
+  
 - [[/podcasts][podcasts]]
 
 * What I'm Doing?
