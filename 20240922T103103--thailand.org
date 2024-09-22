@@ -1,0 +1,8 @@
+#+title:      thailand
+#+date:       [2024-09-22 Sun 10:31]
+#+filetags:   
+#+identifier: 20240922T103103
+
+My first country to vist.
+
+* [[denote:20240922T103218][bangkok]]
