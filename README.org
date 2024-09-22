@@ -3,29 +3,30 @@
 
 I'm Felix Murray Tang. Welcome to my digital realm! I'm an innovator, creator, and lifelong learner. This space is a reflection of my passions, projects, and the endless curiosity that drives me. I'm a multifaceted individual with a deep love for technology, nature, and knowledge.
 
-This website has many TEXT contents,
+This website has many contents inside =/node/xxx=. They can mainly seprate to many subjects.
 
-- [[/notes/][notes]]
+- [[/notes][notes]]
+- [[/articles][articles]]
+- [[/projects][projects]]
   
-- [[/blog][blog]]
-- [[/project/][project]]
-  
-And audio contents [[/podcast][podcast]],
-And video contents [[/video][video]].
+And I also plan to record [[/podcasts][podcasts]], and videos.
 
 * What I'm Doing?
 
 ** Software Adventures
+
 - Crafting this website using Astro, focusing on content creation
 - Mastering FreeBSD for server management and advanced networking
 - Integrating my entire workflow into Emacs, embracing simplicity
 
 ** Hardware Explorations
+
 - Designing custom PCBs with KiCad (recently completed my first design!)
 - 3D printing and modeling with FreeCAD
 - Dabbling in robotics, with plans to dive deeper into ROS
 
 ** Personal Growth
+
 - Reading daily (at least 1 hour) as a long-term project
 - Maintaining an active lifestyle:
   - Running 30km weekly
@@ -37,21 +38,25 @@ And video contents [[/video][video]].
 * Why This Website?
 
 This digital garden serves multiple purposes:
+
 1. To share my knowledge and insights with the world
 2. To inspire creativity and foster a community of learners
 3. To challenge myself to continue writing and growing
 
 ** Technical Details
+
 - Built with Astro for flexibility and performance
 - Content written in org-mode, parsed with astro-org
 - Open-source: both [[https://github.com/felixmurraytang/www][website code]] and [[https://github.com/felixmurraytang/notes][content]] available on GitHub
 
 ** My Workflow
+
 1. Capture ideas using various tools
 2. Consolidate into org-mode notes using Emacs and denote
 3. Automate website updates through GitHub Actions
 
-** TODO List (Because Growth Never Stops)
+** TODO Continue
+
 - Enhance website styling
 - Implement syntax highlighting
 - Add LaTeX support with KaTeX
@@ -62,5 +67,5 @@ This digital garden serves multiple purposes:
 Thank you for visiting. Let's embark on this adventure of curiosity and creation!
 
 * Contacts
-- [[https://github.com/felixmurraytang][GitHub]]
-- [[https://x.com/FelixMTang][X]]
+
+contact me on [[https://github.com/felixmurraytang][GitHub]], [[https://x.com/FelixMTang][X]].
