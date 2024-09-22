@@ -15,13 +15,13 @@ freebsd is my new base os. i love it because,
    
 what i use.
 
-* jails
+* [[denote:20240916T194730][jails]]
 primary method to deploy software or any other tasks.
 
-** bhyve
+** [[denote:20240916T211626][bhyve]]
 i use bhyve inside jails becasue i what bhyve only used as jail's fallback.
 
-* pf
+* [[denote:20240923T055548][pf]]
 firewall that i think is easier then iptables.
 
 * pkg

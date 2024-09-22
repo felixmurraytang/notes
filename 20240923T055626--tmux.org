@@ -1,0 +1,5 @@
+#+title:      tmux
+#+date:       [2024-09-23 Mon 05:56]
+#+filetags:   
+#+identifier: 20240923T055626
+

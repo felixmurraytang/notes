@@ -5,12 +5,9 @@
 
 I use my poor ASUS PB62 Mini PC as my private cloud server.
 
-* What OS I use?
-[[denote:20240913T141808][freebsd]] 
-
-* What I installed and configued?
-I only installed =doas= and =tmux= with =pkg=
-All other software installed in [[denote:20240916T194730][jails]].
-
-- bhyve
-- freebsd
+* Arch
+** [[denote:20240913T141808][freebsd]]
+*** [[denote:20240916T194730][jails]]
+**** freebsd for test
+**** bhyve for test
+**** ubuntu for test by using [[denote:20240916T211626][bhyve]]

@@ -3,4 +3,6 @@
 #+filetags:   :nodejs:
 #+identifier: 20240327T171025
 
-Node version manager is good, also the default install method by nodejs. Becasue I can never worry about switch nodejs version and never worry about the offical package manager's nodejs version too old. 
+Node version manager is good, also the default install method by nodejs.
+
+Becasue I can never worry about switch nodejs version and never worry about the offical package manager's nodejs version too old. 

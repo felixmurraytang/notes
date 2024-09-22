@@ -6,14 +6,17 @@
 
 This is what packages are needed to install python with pyenv.
 
-1. what may need to install
-   =sudo apt install git gcc make zlib1g-dev libssl-dev libbz2-dev libncurses5-dev libncursesw5-dev libffi-dev libreadline-dev libsqlite3-dev liblzma-dev=
+1. what needs for debian/ubuntu?
+   #+begin_src bash
+     sudo apt install git gcc make zlib1g-dev libssl-dev libbz2-dev libncurses5-dev libncursesw5-dev libffi-dev libreadline-dev libsqlite3-dev liblzma-dev
+   #+end_src
 
 2. install pyenv
    https://github.com/pyenv/pyenv?tab=readme-ov-file#automatic-installer
    =curl https://pyenv.run | bash=
 
-3. setup shell https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv
+3. setup shell
+   https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv
    #+begin_src bash
      echo '# pyenv' >> ~/.bashrc
      echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
@@ -25,4 +28,4 @@ This is what packages are needed to install python with pyenv.
    =pyenv install 3.12.2=
    =pyenv global 3.12.2=
 
-* =pyenv-virtualenv=
+* pyenv-virtualenv

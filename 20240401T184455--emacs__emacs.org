@@ -3,6 +3,8 @@
 #+filetags:   :emacs:
 #+identifier: 20240401T184455
 
+emacs is my favorite text editor due to it's tranparence and customize.
+
 * Dired Ignore
 #+begin_src emacs-lisp
   (setq dired-omit-files "\\.dir-locals.el")
@@ -12,3 +14,5 @@
 
 #+RESULTS:
 | auto-revert-mode | (lambda nil (dired-omit-mode)) | denote-dired-mode-in-directories |
+
+* TODO AI complete

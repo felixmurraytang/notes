@@ -8,5 +8,6 @@ I love microk8s, because it just need few command to create. decreate from insta
 I will record what I learned from microk8s. Awesome.
 
 * Install
-* Issue: don't work after reboot host system
+
+* TODO Issue: don't work after reboot host system
 - The ip changed

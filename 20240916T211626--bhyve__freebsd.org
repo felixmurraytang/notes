@@ -5,4 +5,15 @@
 
 freebsd virtulaztion.
 
-* 
+* code
+the [[https://github.com/freebsd/freebsd-src/tree/main/usr.sbin/bhyve][source]] inside freebsd source.
+
+* process to boot os
+[[https://docs.freebsd.org/en/books/handbook/virtualization/#virtualization-host-bhyve][doc]] could be found here.
+
+** load kernel
+*** 
+** start os
+
+* my first contribute
+[[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=280339][bug 280339]] with title "Handbook section 17.5.2 Creating a Thin Jail Using NullFS results in broken jails"

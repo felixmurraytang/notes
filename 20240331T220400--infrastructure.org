@@ -5,7 +5,9 @@
 
 * Nano Pi
 ** OpenWRT
+openwrt is good. but I will consider migrate to one of the bsd os.
 *** lan
+set up lan interface with uci.
 #+begin_src sh
   uci del dhcp.lan.ra_slaac # ?
   uci set network.lan.ipaddr='192.168.36.1'
@@ -13,8 +15,11 @@
 #+end_src
 
 *** update & packages
-=opkg update=
-=opkg install kmod-mt76x2u hostapd sing-box tailscale iptables-nft parted tune2fs resize2fs=
+1. =opkg update=
+2. install dependenices
+   #+begin_src sh
+     opkg install kmod-mt76x2u hostapd sing-box tailscale iptables-nft parted tune2fs resize2fs
+   #+end_src
 
 *** sd card expanding the ext4 file system
 https://openwrt.org/docs/guide-user/installation/installation_methods/sd_card#ext4_image
@@ -54,9 +59,9 @@ And =Enable=
 #+end_src
 *** ssh key
 
-*** sing-box
+*** app1
 **** modify =/etc/config/sing-box= set user as =root=
-**** config
+**** config example
 #+begin_src json
 {
     "log": {},
@@ -87,7 +92,7 @@ And =Enable=
             {
                 "domain": [
                     "localhost",
-                    "yayasay.net"
+                    "example.com"
                 ],
                 "server": "dns-local"
             }
@@ -161,7 +166,7 @@ https://pfchina.org/?p=11850
   uci set network.proxy.device='tun0'
 #+end_src
 
-**** add firewall
+**** add firewall config
 https://pfchina.org/?p=11850
 #+begin_src sh
   uci add firewall zone # =cfg0edc81
@@ -186,7 +191,7 @@ add below to =/etc/config/dhcp= section =config dnsmasq=
 **** =/etc/init.d/sing-box start=
 **** =logread -f=
 
-*** tailscale
+*** app2
 https://openwrt.org/docs/guide-user/services/vpn/tailscale/start
 
 **** =tailscale up --netilter-mode=off=
@@ -226,10 +231,12 @@ Forward to =proxy= of course
 **** =tailscale up --netfilter-mode=off --accept-routes --advertise-exit-node --advertise-routes=192.168.36.0/24,240.0.0.0/8=
 
 
-* Proxy on Cloud (Vultr)
-** Hysteria2
+* Vultr
+** app1
 ** wgcf (Cloudflare Warp)
 
 * ASUS PB62 [[denote:20240327T093028][private cloud]]
+as a private cloud use to learn and test.
 
 * Raspberry Pi
+
