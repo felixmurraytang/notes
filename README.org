@@ -9,7 +9,7 @@ This website has many contents inside =/node/xxx=. They can mainly seprate to ma
 - [[/articles][articles]]
 - [[/projects][projects]]
   
-And I also plan to record [[/podcasts][podcasts]], and videos.
+And I also plan to record [[/podcasts][podcasts]], and [[/videos/][videos]].
 
 * What I'm Doing?
 

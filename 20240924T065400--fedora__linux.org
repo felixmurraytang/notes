@@ -1,0 +1,8 @@
+#+title:      fedora
+#+date:       [2024-09-24 Tue 06:54]
+#+filetags:   :linux:
+#+identifier: 20240924T065400
+
+[[https://fedoraproject.org/][fedora]] is redhat's upstream.
+
+[[https://src.fedoraproject.org/][fedora package source]] is the location where rpm packages source located. check this location if need to know such as CVE patch fix or what patch applyed compare to upstream. 

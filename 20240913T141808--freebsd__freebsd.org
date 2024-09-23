@@ -24,6 +24,9 @@ i use bhyve inside jails becasue i what bhyve only used as jail's fallback.
 * [[denote:20240923T055548][pf]]
 firewall that i think is easier then iptables.
 
+* port
+build applications with minimal patch.
+
 * pkg
 the most clear package management i used.
 
