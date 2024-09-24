@@ -1,0 +1,45 @@
+#+title:      weblog
+#+date:       [2024-09-22 Sun 10:53]
+#+filetags:   :html:project:web:
+#+identifier: 20240922T105336
+
+* list
+
+** DONE astro
+
+** DONE astro-org 
+
+** DONE astro-org private maintain
+
+** DONE fix frontmatter's date
+
+** DONE fix frontmatter's filetags
+
+** DONE decrease header
+
+** DONE style, stage1
+basic look with lighthouse 100%. and make ui can look roughly.
+
+** TODO style, stage2
+- watch out margin, padding etc with some fundamental UI design knwoledge
+- back dark mode
+
+** BUG rehypeHighlight
+need know why code don't has color
+
+** DONE rehypeAutolinkHeadings
+
+* Tech stack
+** astro
+
+** astro-org
+
+** uniorg
+
+** vfile
+** rehype
+** remark
+
+* Goal
+- lighthouse score all 100
+- looks like a nice paper format

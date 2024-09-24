@@ -1,5 +1,0 @@
-#+title:      personal website
-#+date:       [2024-09-22 Sun 10:53]
-#+filetags:   :project:
-#+identifier: 20240922T105336
-

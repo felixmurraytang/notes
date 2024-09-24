@@ -1,40 +1,26 @@
 #+title: Felix Murray Tang: Innovator, Explorer, Lifelong Learner
 #+date: [2024-09-18 Wed 10:58]
 
-I'm Felix Murray Tang. Welcome to my digital realm! I'm an innovator, creator, and lifelong learner. This space is a reflection of my passions, projects, and the endless curiosity that drives me. I'm a multifaceted individual with a deep love for technology, nature, and knowledge.
+I'm Felix Murray Tang, and I welcome you to my digital realm! As an innovator, creator, and lifelong learner, this space reflects my passions, projects, and the endless curiosity that drives me. I'm a multifaceted individual with a deep love for technology, nature, and knowledge.
 
-This website has many contents inside =/node/xxx=. They can mainly seprate to many subjects.
+This website contains various content inside the =/node/= directory. The main subjects are:
 
 - [[/notes/][notes]]
 - [[/articles/][articles]]
 - [[/projects/][projects]]
-  
-And I also plan to record [[/podcasts/][podcasts]] and [[/videos/][videos]].
 
-* What I'm Doing?
+I also plan to record [[/podcasts/][podcasts]] and [[/videos/][videos]].
 
-** Software Adventures
+* What I'm Doing
 
-- Crafting this website using Astro, focusing on content creation
-- Mastering FreeBSD for server management and advanced networking
-- Integrating my entire workflow into Emacs, embracing simplicity
+My current endeavors span across software, hardware, and personal growth:
 
-** Hardware Explorations
+In the software realm, I'm crafting this website using Astro, with a focus on content creation. I'm also mastering =FreeBSD= for server management and advanced networking, while integrating my entire workflow into ~Emacs~ to embrace simplicity.
 
-- Designing custom PCBs with KiCad (recently completed my first design!)
-- 3D printing and modeling with FreeCAD
-- Dabbling in robotics, with plans to dive deeper into ROS
+On the hardware front, I've recently completed my first custom PCB design using =KiCad=, which has been an exciting milestone. I'm also exploring 3D printing and modeling with FreeCAD, and dabbling in robotics with plans to dive deeper into ROS in the near future.
 
-** Personal Growth
-
-- Reading daily (at least 1 hour) as a long-term project
-- Maintaining an active lifestyle:
-  - Running 30km weekly
-  - Monthly long trail runs or hikes
-- Content creation:
-  - Writing daily notes and articles
-  - Planning to launch a YouTube channel (stay tuned!)
+Personal growth is a significant part of my journey. I've committed to reading daily for at least an hour as a long-term project. To maintain an active lifestyle, I run 30km weekly and embark on monthly long trail runs or hikes. In terms of content creation, I write daily notes and articles, and I'm planning to launch a YouTube channel soon, so stay tuned!
 
 * Contacts
 
-contact me on [[https://github.com/felixmurraytang][GitHub]], [[https://x.com/FelixMTang][X]].
+Feel free to connect with me on [[https://github.com/felixmurraytang][GitHub]] or [[https://x.com/FelixMTang][X]].

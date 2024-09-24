@@ -3,6 +3,9 @@
 #+filetags:   :project:whisper:
 #+identifier: 20240923T070604
 
+* Goal
+- voice input with groq's whisper api
+
 * ui
 use next.js, v0
 
