@@ -1,6 +1,0 @@
-#+title:      cat
-#+date:       [2024-09-18 Wed 22:42]
-#+filetags:   
-#+identifier: 20240918T224220
-
-my cat

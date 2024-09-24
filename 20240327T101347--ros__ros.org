@@ -5,7 +5,9 @@
 
 Of course, ROS means ROS 2.
 
-* story with ros at university
+* Story with ros at university
 I first know ROS almost 10 years ago I think.
 
+- I used /raspberry pi/ as mobile compute platform. running =ubuntu 16.04= i think.
+- use a laser ladar
 

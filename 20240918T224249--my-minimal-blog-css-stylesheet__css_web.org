@@ -1,6 +1,6 @@
-#+title:      my minimal css stylesheet
+#+title:      my minimal blog css stylesheet
 #+date:       [2024-09-18 Wed 22:42]
-#+filetags:   :css:
+#+filetags:   :css:web:
 #+identifier: 20240918T224249
 
 [[https://github.com/felixmurraytang/www/blob/main/src/styles/global.css][global.css]]

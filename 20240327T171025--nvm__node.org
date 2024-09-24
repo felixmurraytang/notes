@@ -6,3 +6,5 @@
 Node version manager is good, also the default install method by nodejs.
 
 Becasue I can never worry about switch nodejs version and never worry about the offical package manager's nodejs version too old. 
+
+default location is ~~/.nvm/~.
