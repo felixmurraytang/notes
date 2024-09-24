@@ -3,3 +3,16 @@
 #+filetags:   :linux:unix:
 #+identifier: 20240919T193412
 
+* kernel
+
+* distributions I used
+
+- [[denote:20240919T215435][ubuntu]]
+- [[denote:20240924T065400][fedora]]
+- LFS
+- Arch
+  - Manjaro
+- Gentoo
+- Openwrt
+- Guix
+- ...

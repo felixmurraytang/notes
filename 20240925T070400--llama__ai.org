@@ -1,0 +1,6 @@
+#+title:      llama
+#+date:       [2024-09-25 Wed 07:04]
+#+filetags:   :ai:
+#+identifier: 20240925T070400
+
+use groq api is great.

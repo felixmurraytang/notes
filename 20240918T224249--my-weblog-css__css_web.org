@@ -1,4 +1,4 @@
-#+title:      my minimal blog css stylesheet
+#+title:      my weblog css
 #+date:       [2024-09-18 Wed 22:42]
 #+filetags:   :css:web:
 #+identifier: 20240918T224249
