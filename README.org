@@ -5,9 +5,9 @@ I'm Felix Murray Tang. Welcome to my digital realm! I'm an innovator, creator, a
 
 This website has many contents inside =/node/xxx=. They can mainly seprate to many subjects.
 
-- [[/notes][notes]]
-- [[/articles][articles]]
-- [[/projects][projects]]
+- [[/notes/][notes]]
+- [[/articles/][articles]]
+- [[/projects/][projects]]
   
 And I also plan to record [[/podcasts][podcasts]], and [[/videos/][videos]].
 
