@@ -12,7 +12,7 @@ the [[https://github.com/freebsd/freebsd-src/tree/main/usr.sbin/bhyve][source]] 
 [[https://docs.freebsd.org/en/books/handbook/virtualization/#virtualization-host-bhyve][doc]] could be found here.
 
 ** load kernel
-*** 
+
 ** start os
 
 * my first contribute

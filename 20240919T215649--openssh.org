@@ -3,3 +3,10 @@
 #+filetags:   
 #+identifier: 20240919T215649
 
+i love [[https://www.openssh.com/][openssh]], a project developed by openbsd. i really love openbsd's manual page.
+
+* config
+
+- [[https://man.openbsd.org/ssh_config#HostKeyAlgorithms][HostKeyAlgorithms]]
+
+* code

@@ -1,0 +1,5 @@
+#+title:      apache hadoop
+#+date:       [2024-09-26 Thu 06:25]
+#+filetags:   
+#+identifier: 20240926T062504
+

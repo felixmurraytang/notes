@@ -1,0 +1,18 @@
+#+title:      tramp
+#+date:       [2024-09-26 Thu 06:43]
+#+filetags:   :emacs:
+#+identifier: 20240926T064325
+
+tramp mode means “Transparent Remote (file) Access, Multiple Protocol” mode for gnu emacs.
+
+access almost any remote devices with lot of protocols.
+
+* config
+
+* code
+
+* protocols
+
+** ssh
+
+** sudo
