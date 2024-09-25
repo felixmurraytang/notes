@@ -5,9 +5,9 @@ I'm Felix Murray Tang, and I welcome you to my digital realm! As an innovator, c
 
 This website contains various content inside the =/node/= directory. The main subjects are:
 
-- [[/notes/][notes]]
-- [[/articles/][articles]]
-- [[/projects/][projects]]
+- [[/notes/][Notes]]
+- [[/articles/][Articles]]
+- [[/projects/][Projects]]
 
 I also plan to record [[/podcasts/][podcasts]] and [[/videos/][videos]].
 
