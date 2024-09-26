@@ -9,3 +9,8 @@
 ** minimal
 ** only for html tag. do not use class or id
 ** semantic html base
+
+* style1: paper
+
+* style2: emacs org mode look
+

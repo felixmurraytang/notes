@@ -3,3 +3,4 @@
 #+filetags:   :db:
 #+identifier: 20240919T215211
 
+i don't think i need to use redis on my personal projects. but i'm happy to learn.

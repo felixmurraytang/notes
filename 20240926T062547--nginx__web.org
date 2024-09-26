@@ -3,3 +3,12 @@
 #+filetags:   :web:
 #+identifier: 20240926T062547
 
+nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache. The software was created by Igor Sysoev and first publicly released in 2004. A company of the same name was founded in 2011 to provide support and Nginx plus paid software.
+
+* what?
+
+i use nginx to config proxy, load balancer, and cache.
+
+** i used to build one from source to get some features that default package doesn't have.
+
+i will provide details later.

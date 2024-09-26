@@ -3,3 +3,6 @@
 #+filetags:   :firewall:freebsd:
 #+identifier: 20240923T055548
 
+openbsd's firewall.
+
+* config

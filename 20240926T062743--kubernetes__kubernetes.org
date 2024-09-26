@@ -3,3 +3,11 @@
 #+filetags:   :kubernetes:
 #+identifier: 20240926T062743
 
+kubernetes is a container orchestration platform that automates the deployment, scaling, and management of containerized applications.
+
+* what?
+
+i used many distributions
+
+- [[denote:20240327T093642][microk8s]]
+- k3s

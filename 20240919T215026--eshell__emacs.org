@@ -3,3 +3,10 @@
 #+filetags:   :emacs:
 #+identifier: 20240919T215026
 
+emacs shell.
+
+* why?
+looks cool, and I can use it to run shell commands without leaving emacs.
+and i don't feel comfortable for shell's interact method.
+
+i love emacs can run command just invoke a function.

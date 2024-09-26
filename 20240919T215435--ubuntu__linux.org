@@ -3,3 +3,11 @@
 #+filetags:   :linux:
 #+identifier: 20240919T215435
 
+ubuntu is my first linux distribution.
+
+features i used,
+
+- [[denote:20240919T215547][cloud-init]]
+- snap, yes i use snap. this make me easy to install and manage some software.
+  - microk8s
+  - lxd

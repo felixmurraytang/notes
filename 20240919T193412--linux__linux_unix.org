@@ -5,6 +5,9 @@
 
 * kernel
 
+linux kernel looks like very complex compare with freebsd kernel.
+So, it's a changenge to understand the linux kernel.
+
 * distributions I used
 
 - [[denote:20240919T215435][ubuntu]]

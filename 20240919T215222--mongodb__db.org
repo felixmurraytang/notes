@@ -3,3 +3,4 @@
 #+filetags:   :db:
 #+identifier: 20240919T215222
 
+mongodb is a document-oriented database that stores data in flexible, JSON-like documents. It is a NoSQL database, which means it doesn't use the usual rows and columns found in most relational databases. This makes it easier to store and work with data that doesn't fit into a traditional schema.

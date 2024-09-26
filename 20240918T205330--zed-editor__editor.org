@@ -4,3 +4,4 @@
 #+identifier: 20240918T205330
 
 * code
+i will explore the code and sturcture of famous open source projects.

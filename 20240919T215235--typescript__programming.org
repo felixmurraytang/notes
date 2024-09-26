@@ -3,3 +3,4 @@
 #+filetags:   :programming:
 #+identifier: 20240919T215235
 
+typescript is a superset of javascript that adds static typing to the language. It is a language that is compiled to javascript. It is developed and maintained by Microsoft.

@@ -3,4 +3,8 @@
 #+filetags:   :gnu:
 #+identifier: 20240919T214924
 
+collect gnu projects
+
 * bash
+
+* coreutils

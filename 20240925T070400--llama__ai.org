@@ -4,3 +4,5 @@
 #+identifier: 20240925T070400
 
 use groq api is great.
+
+* llama 3.2 released

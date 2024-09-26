@@ -3,3 +3,8 @@
 #+filetags:   :emacs:
 #+identifier: 20240919T214650
 
+emacs magit mode is a git porcelain for emacs. It is a very powerful tool for git. It is a must have tool for emacs users.
+
+why magit?
+
+it's 2-dementions operation is cool. i never needs to remember and type git commands.

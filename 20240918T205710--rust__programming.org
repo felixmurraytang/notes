@@ -3,3 +3,4 @@
 #+filetags:   :programming:
 #+identifier: 20240918T205710
 
+i will learn rust.

@@ -3,3 +3,5 @@
 #+filetags:   :electronics:
 #+identifier: 20240919T215155
 
+my another old friend. I have been using arduino for a long time.
+

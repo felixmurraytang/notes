@@ -3,3 +3,6 @@
 #+filetags:   
 #+identifier: 20240919T215635
 
+wireguard is a modern VPN protocol that is very easy to setup and use. it for linux.
+
+the advantage is simple, and effection.

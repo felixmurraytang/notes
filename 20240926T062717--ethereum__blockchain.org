@@ -3,3 +3,8 @@
 #+filetags:   :blockchain:
 #+identifier: 20240926T062717
 
+ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, fraud or third party interference.
+
+* demo
+
+i will write a demo here

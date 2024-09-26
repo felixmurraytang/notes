@@ -3,3 +3,12 @@
 #+filetags:   :programming:
 #+identifier: 20240919T214756
 
+my first programing language i leanred. almost forget it now.
+
+* why?
+
+learn deeper.
+
+* how?
+
+write, note, and publish articles

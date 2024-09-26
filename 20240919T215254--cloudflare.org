@@ -3,3 +3,8 @@
 #+filetags:   
 #+identifier: 20240919T215254
 
+cloudflare is awesome.
+
+* cloudflare workers
+* cloudflare pages
+i plan to migrate my website from github pages to cloud pages.

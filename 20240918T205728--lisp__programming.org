@@ -3,3 +3,5 @@
 #+filetags:   :programming:
 #+identifier: 20240918T205728
 
+learn lisp because I want to learn more deeper knowledge about programming.
+

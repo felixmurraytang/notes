@@ -4,3 +4,5 @@
 #+identifier: 20240919T213711
 
 zfs = file system + volume
+
+zfs is a file system and volume manager that supports high storage capacities, snapshots, and copy-on-write cloning. It is a part of the Solaris operating system, and is available on FreeBSD as well.

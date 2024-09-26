@@ -3,3 +3,6 @@
 #+filetags:   :programming:
 #+identifier: 20240919T215111
 
+i heard ruby is awesome.
+
+* TODO finding a method to do version management

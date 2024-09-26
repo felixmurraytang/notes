@@ -3,11 +3,11 @@
 #+filetags:   :unix:
 #+identifier: 20240919T193418
 
+unix is a philosophy. it is a way of thinking. it is a way of doing things. it is a way of life.
+
 * unix philosophy
 [[http://www.catb.org/esr/writings/taoup/html/ch01s06.html][basic of the unix philosophy]]
 
 * [[denote:20240915T131212][freecad]]
 
 * [[denote:20240919T193412][linux]]
-
-* 

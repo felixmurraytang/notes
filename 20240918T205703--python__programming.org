@@ -3,4 +3,12 @@
 #+filetags:   :programming:
 #+identifier: 20240918T205703
 
+* [[denote:20240327T094128][pyenv]]
 
+* scrapy
+
+* pandas
+
+* numpy
+
+* matplotlib

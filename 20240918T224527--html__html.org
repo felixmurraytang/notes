@@ -5,4 +5,6 @@
 
 semantic html
 
-* 
+i like to use semantic html. it makes the code more readable and easier to understand. it also makes it easier to style the page with css.
+
+for example, instead of using a div to create a section, you can use the section element. this makes it clear that the content inside the section is related and should be treated as a single unit.

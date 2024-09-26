@@ -3,3 +3,4 @@
 #+filetags:   :freebsd:
 #+identifier: 20240923T055610
 
+light version of sudo.

@@ -3,3 +3,6 @@
 #+filetags:   :programming:
 #+identifier: 20240919T215047
 
+i don't like it, i don't know why, maybe it so popular and look so heavy. but i have to learn it.
+
+* maven

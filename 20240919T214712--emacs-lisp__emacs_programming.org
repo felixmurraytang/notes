@@ -3,3 +3,14 @@
 #+filetags:   :emacs:programming:
 #+identifier: 20240919T214712
 
+plan to learn emacs lisp.
+
+* why?
+
+use emacs for a long time, but never learn emacs lisp. it's time to learn it.
+because i want to mirgate workflow to emacs, and plan to make workflow more free and efficient then vscode's world.
+
+* how?
+
+learn, try, note, thinking, n
+and publish.

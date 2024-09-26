@@ -3,4 +3,11 @@
 #+filetags:   
 #+identifier: 20240919T181717
 
-1. 
+i will start youtube content creation.
+
+my plan is to create videos on the following topics:
+
+1. programming
+2. linux
+3. freebsd
+4. note

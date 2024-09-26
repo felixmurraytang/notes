@@ -3,3 +3,9 @@
 #+filetags:   :emacs:
 #+identifier: 20240919T214636
 
+i plan to use org mode for to text anything.
+
+1. for daily notes
+2. for articles
+3. for project management
+4. for organzing knowledge

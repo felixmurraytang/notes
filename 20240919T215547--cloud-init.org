@@ -3,3 +3,6 @@
 #+filetags:   
 #+identifier: 20240919T215547
 
+i love this tool. it make vm's creating totally automated.
+
+older ubuntu version's installer has similiar feature called ?preseed?. i don't many. it looks like linux world not so *open*. it take my long time to search information about canton?
