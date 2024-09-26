@@ -1,3 +1,4 @@
+
 #+title:      bhyve
 #+date:       [2024-09-16 Mon 21:16]
 #+filetags:   :freebsd:
@@ -10,10 +11,10 @@ freebsd virtulaztion.
 the [[https://github.com/freebsd/freebsd-src/tree/main/usr.sbin/bhyve][source]] inside freebsd source.
 
 * process to boot os
+
 [[https://docs.freebsd.org/en/books/handbook/virtualization/#virtualization-host-bhyve][doc]] could be found here.
 
 ** load kernel
-
 ** start os
 
 * my first contribute
