@@ -3,11 +3,14 @@
 #+filetags:   :ros:
 #+identifier: 20240327T101347
 
-Of course, ROS means ROS 2.
+ROS (Robot Operating System) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms.
 
-* Story with ros at university
+* Story with ros at university time
+
 I first know ROS almost 10 years ago I think.
 
 - I used /raspberry pi/ as mobile compute platform. running =ubuntu 16.04= i think.
 - use a laser ladar
+
+But after that, I didn't use it for a long time. And I thing I don't really ever understand it.
 

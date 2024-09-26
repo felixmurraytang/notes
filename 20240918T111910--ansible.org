@@ -3,4 +3,4 @@
 #+filetags:   
 #+identifier: 20240918T111910
 
-ansible
+ansible is a configuration management tool that allows you to automate the deployment and configuration of systems. It is written in Python and uses YAML to define the configuration. It is agentless, meaning that it does not require any software to be installed on the target systems.

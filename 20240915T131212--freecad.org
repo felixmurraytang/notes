@@ -5,4 +5,4 @@
 
 open source 3D model software.
 
-* code
+Great, freecad 1.0 will release soon.

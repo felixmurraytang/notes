@@ -3,3 +3,13 @@
 #+filetags:   :article:
 #+identifier: 20240918T112047
 
+* private cloud
+
+I use a mini pc as my private cloud server. I tried base operating systems. But none of them make me happy unti I found freebsd. I love freebsd. It is simple, stable, and fast.
+
+** freebsd
+*** jails
+**** jails1
+**** jails2
+**** jails3 with bhyve
+I install bhyve inside jails to install something that freebsd don't support. such as docker, kubernetes, and so on.

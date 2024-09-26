@@ -3,16 +3,26 @@
 #+filetags:   :emacs:
 #+identifier: 20240401T184455
 
-emacs is my favorite text editor due to it's tranparence and customize.
+emacs is my favorite text editor due to it's tranparence and customizing ability.
 
-* Dired Ignore
+* Packages I used
+** built-in packages
+*** dired
+*** tramp
+
+** third-party packages
+
+*** copilot.el
+*** ellama
+
+* Notes
+** Ignore files in dired
 #+begin_src emacs-lisp
   (setq dired-omit-files "\\.dir-locals.el")
   (add-hook 'dired-mode-hook (lambda () (dired-omit-mode)))
   (add-hook 'dired-mode-hook 'auto-revert-mode)
 #+end_src
 
-#+RESULTS:
-| auto-revert-mode | (lambda nil (dired-omit-mode)) | denote-dired-mode-in-directories |
+* Plan note
 
-* TODO AI complete
+** write package to make it works like cursor editor

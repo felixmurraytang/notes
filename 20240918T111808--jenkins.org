@@ -3,4 +3,4 @@
 #+filetags:   
 #+identifier: 20240918T111808
 
-jenkins
+jenkins is a CI/CD tool. It is a server-based system running in a servlet container such as Apache Tomcat. It supports SCM tools including CVS, Subversion, Git, Mercurial, Perforce, Clearcase, and RTC, and can execute Apache Ant, Apache Maven, and sbt-based projects as well as arbitrary shell scripts and Windows batch commands. It can also monitor the execution of externally run jobs, such as cron jobs, even if it is only used as a backup system.

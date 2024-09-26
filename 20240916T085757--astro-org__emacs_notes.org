@@ -3,6 +3,8 @@
 #+filetags:   :emacs:notes:
 #+identifier: 20240916T085757
 
+astro-org act as a replacement for markdown parser in astro. It use uniorg to parse org files and generate html content.
+
 * vfile
 where data.astro.frontmatter for astro.
 

@@ -5,4 +5,7 @@
 
 PCB design tool.
 
-* process
+* my experience for my first pcb design
++ as a leaner, first thing is choose a small project as a start. I tried space mouse, keyword. Finnally I choose a simpler one, a 1x2 keypad. Just used to replace page up and page down key.
++ I used kicad, it is a open source tool, and it is free. I used it on my macbook pro. It is a little bit slow, but it is ok.
++ manufacture is a little bit difficult. I used jlcpcb, it is a chinese manufacture. I have to convert the kicad file to gerber file, and then upload to the website. It is a little bit difficult for me. I have to google a lot to find the right way to do it.

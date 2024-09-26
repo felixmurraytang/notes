@@ -3,20 +3,19 @@
 #+filetags:   :python:
 #+identifier: 20240327T094128
 
+pyenv is a good tool to manage python versions. It can be used to install multiple versions of python and switch between them. I prefer to use python version manager because I prefer always use latest version of python. and easy to mange pip packages.
 
-This is what packages are needed to install python with pyenv.
-
-1. what needs for debian/ubuntu?
+1. what pyenv dependencies need for debian/ubuntu? (minimal install)
    #+begin_src bash
      sudo apt install git gcc make zlib1g-dev libssl-dev libbz2-dev libncurses5-dev libncursesw5-dev libffi-dev libreadline-dev libsqlite3-dev liblzma-dev
    #+end_src
 
-2. install pyenv
+2. install pyenv itself
    https://github.com/pyenv/pyenv?tab=readme-ov-file#automatic-installer
    =curl https://pyenv.run | bash=
 
 3. setup shell
-   https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv
+   refer [[https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv][this]].
    #+begin_src bash
      echo '# pyenv' >> ~/.bashrc
      echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
@@ -24,8 +23,9 @@ This is what packages are needed to install python with pyenv.
      echo 'eval "$(pyenv init -)"' >> ~/.bashrc
    #+end_src
 
-4. install python
+4. finall thing is install specific python version, set as global
    =pyenv install 3.12.2=
    =pyenv global 3.12.2=
 
 * pyenv-virtualenv
+pyenv-virtualenv is a pyenv plugin to manage virtualenv.
