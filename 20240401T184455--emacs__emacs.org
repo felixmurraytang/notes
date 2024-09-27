@@ -26,3 +26,153 @@ emacs is my favorite text editor due to it's tranparence and customizing ability
 * Plan note
 
 ** write package to make it works like cursor editor
+
+* Notes
+hostname="freebsd"
+
+# ifconfig_em0="DHCP"
+# ifconfig_em0_ipv6="inet6 accept_rtadv"
+cloned_interfaces="bridge0"
+ifconfig_bridge0="addm em0 up SYNCDHCP"
+ifconfig_bridge0_ipv6="inet6 accept_rtadv auto_linklocal"
+ifconfig_em0="up"
+
+sshd_enable="YES"
+moused_nondefault_enable="NO"
+dumpdev="AUTO"
+zfs_enable="YES"
+
+pf_enable="YES"
+
+jail_enable="YES"
+jail_parallel_start="YES"
+
+vm_enable="YES"
+vm_dir="zfs:zroot/vms"
+vm_list="docker jail k3s lxc microk8s milkv podman qemu ros"
+
+
+net.link.tap.up_on_open=1
+
+
+bridge_if = "bridge0"
+local_net = "192.168.36.0/24"
+
+set skip on lo0
+
+# scrub in all
+
+block all
+
+pass in on $bridge_if proto tcp to $local_net port 22 flags S/SA keep state (max-src-conn 5, max-src-conn-rate 5/5, overload <bruteforce> flush global)
+pass on $bridge_if proto { tcp, udp } to any port 53
+
+pass out all
+
+pass inet proto icmp icmp-type { echoreq, unreach }
+
+antispoof quick for $bridge_if
+
+
+exec.start = "/bin/sh /etc/rc";
+exec.stop = "/bin/sh /etc/rc.shutdown";
+exec.consolelog = "/var/log/jails/jail_console_${name}.log";
+
+allow.raw_sockets;
+exec.clean;
+mount.devfs;
+devfs_ruleset = 6;
+
+host.hostname = "${name}";
+path = "/usr/local/jails/${name}";
+  
+vnet;
+vnet.interface = "${epair}b";
+
+$bridge = "bridge0"; 
+$epair = "epair${jid}";
+
+exec.prestart  = "ifconfig ${epair} create up";
+exec.prestart += "ifconfig ${epair}a up descr jail:${name}";
+exec.prestart += "ifconfig ${bridge} addm ${epair}a up";
+exec.start    += "ifconfig ${epair}b up";
+exec.start    += "dhclient ${epair}b";
+exec.poststop  = "ifconfig ${bridge} deletem ${epair}a";
+exec.poststop += "ifconfig ${epair}a destroy";
+
+airflow {
+  jid = 1;
+}
+
+
+permit nopass felix as root
+permit felix as root cmd pkg args update
+
+
+felix@freebsd:~ $ pkg list doas
+/usr/local/bin/doas
+/usr/local/bin/doasedit
+/usr/local/bin/vidoas
+/usr/local/etc/doas.conf.sample
+/usr/local/share/licenses/doas-6.3p12/BSD2CLAUSE
+/usr/local/share/licenses/doas-6.3p12/ISCL
+/usr/local/share/licenses/doas-6.3p12/LICENSE
+/usr/local/share/licenses/doas-6.3p12/catalog.mk
+/usr/local/share/man/man1/doas.1.gz
+/usr/local/share/man/man5/doas.conf.5.gz
+/usr/local/share/man/man8/doasedit.8.gz
+/usr/local/share/man/man8/vidoas.8.gz
+
+
+AllowUsers felix
+UsePAM no
+PasswordAuthentication no
+
+
+
+felix@freebsd:~ $ doas freebsd-update IDS
+src component not installed, skipped
+Looking up update.FreeBSD.org mirrors... 3 mirrors found.
+Fetching metadata signature for 14.1-RELEASE from update1.freebsd.org... done.
+Fetching metadata index... done.
+Fetching 1 metadata files... done.
+Inspecting system... done.
+/etc/group has SHA256 hash 3b195b556fa81799526422d374c8d8505a98e5cad7865c6660c390af212b3986, but should have SHA256 hash a76791033e18dcb526c30a6417bdb31ef774649f84e7f4ca0e745549cb15729c.
+/etc/master.passwd has SHA256 hash ceee11b3335f62ba0cb41987bd4cc3ea4806a526b5689ed3ed9229196b914990, but should have SHA256 hash 55dfb5a41ebad44523b26cba443d94c3d55e0b39a32558f81a1d50fed964ec34.
+/etc/passwd has SHA256 hash 1c6f854f743ca9b33dbdf64c048895864de4382f30635b070d0d737d14b2069e, but should have SHA256 hash 57d2a756f16439eb2bc13af8d4b0a958ccec88643c6246cfc00e5b0894417eec.
+/etc/pwd.db has SHA256 hash 8994db11a4d346cd2d6dd198e43ea91ec49ba20695756ba2436a1c94317aa3e5, but should have SHA256 hash bd30e09f6e06e4430bbb8fa20c4ed46babaec585d5580a92244c6a4227c5af56.
+/etc/spwd.db has SHA256 hash 3e3e2adedd520c400fa31a9286e89e795c0d2e2bfc82c4a1813ffcc41729c39f, but should have SHA256 hash 5b8454a1d288eef2ed215f2280ac5cf9e9197ac1d2a1e46a67ba38c2c0c370e7.
+/etc/ssh/sshd_config has SHA256 hash 5474943c060bdd464710816529164d49a3ef5910b589b86d8504a0bac48d91ce, but should have SHA256 hash 726ea8f0217e8a89fd3b2dd3128b4f681939c19ef434f522eea479320341c201.
+/etc/sysctl.conf has SHA256 hash 90082ca647578d2c6ff359d86bf65cc46cb9d8aba2518e4625a60c3b4a2f03b4, but should have SHA256 hash 45f469e7a9b4eef887bab7b55397305043fe101e1d6ce6f7e23d758e72f56dc6.
+
+
+felix@freebsd:/usr/local/jails/bhyve $ ll
+total 88
+drwxr-xr-x  15 root wheel uarch   24 Aug 22 13:19 ./
+drwxr-xr-x   5 root wheel uarch    6 Aug 20 14:46 ../
+-rw-r--r--   1 root wheel uarch 1011 May 31 09:00 .cshrc
+-rw-r--r--   1 root wheel uarch  495 May 31 09:00 .profile
+-r--r--r--   1 root wheel uarch 6109 May 31 09:39 COPYRIGHT
+drwxr-xr-x   2 root wheel uarch   49 Aug 22 13:09 bin/
+drwxr-xr-x  15 root wheel uarch   69 Aug 22 13:09 boot/
+dr-xr-xr-x   9 root wheel -      512 Aug 22 13:30 dev/
+lrwxr-xr-x   1 root wheel uarch   12 Aug 22 13:18 etc@ -> skeleton/etc
+lrwxr-xr-x   1 root wheel uarch   13 Aug 22 13:19 home@ -> skeleton/home
+drwxr-xr-x   4 root wheel uarch   78 Aug 22 13:09 lib/
+drwxr-xr-x   3 root wheel uarch    5 May 31 08:58 libexec/
+drwxr-xr-x   2 root wheel uarch    2 May 31 08:32 media/
+drwxr-xr-x   2 root wheel uarch    2 May 31 08:32 mnt/
+drwxr-xr-x   2 root wheel uarch    2 May 31 08:32 net/
+dr-xr-xr-x   2 root wheel uarch    2 May 31 08:32 proc/
+drwxr-xr-x   2 root wheel uarch  150 Aug 22 13:09 rescue/
+lrwxr-xr-x   1 root wheel uarch   13 Aug 22 13:19 root@ -> skeleton/root
+drwxr-xr-x   2 root wheel uarch  150 Aug 22 13:09 sbin/
+drwxr-xr-x   8 root wheel uarch    8 Aug 22 13:16 skeleton/
+lrwxr-xr-x   1 root wheel uarch   11 May 31 08:32 sys@ -> usr/src/sys
+lrwxr-xr-x   1 root wheel uarch   12 Aug 22 13:19 tmp@ -> skeleton/tmp
+drwxr-xr-x  13 root wheel uarch   14 Aug 22 13:19 usr/
+lrwxr-xr-x   1 root wheel uarch   12 Aug 22 13:19 var@ -> skeleton/var
+felix@freebsd:/usr/local/jails/bhyve $ ll etc/ssl/certs/002c0b4f.0 
+lrwxr-xr-x  1 root wheel uarch 56 Aug 22 13:09 etc/ssl/certs/002c0b4f.0@ -> ../../../usr/share/certs/trusted/GlobalSign_Root_R46.pem
+felix@freebsd:/usr/local/jails/bhyve $ ll /usr/share/certs/trusted/GlobalSign_Root_R46.pem 
+-r--r--r--  1 root wheel uarch 7420 May 31 09:14 /usr/share/certs/trusted/GlobalSign_Root_R46.pem

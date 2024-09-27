@@ -9,3 +9,15 @@ i plan to use org mode for to text anything.
 2. for articles
 3. for project management
 4. for organzing knowledge
+
+* org-todo-keywords
+#+begin_src
+  (setq org-todo-keywords
+      '((sequence "TODO(t)" "NEXT(n)" "DOING(i)" "WAITING(w@/!)" "|" "DONE(x!)" "CANCELED(c@)")
+        (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
+        (sequence "BACKLOG(l)" "READY(y)" "ACTIVE(a)" "|" "COMPLETED(d)")))
+#+end_src
+
+- general sequence
+- bug sequence
+- project sequence

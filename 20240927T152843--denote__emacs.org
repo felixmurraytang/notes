@@ -1,0 +1,5 @@
+#+title:      denote
+#+date:       [2024-09-27 Fri 15:28]
+#+filetags:   :emacs:
+#+identifier: 20240927T152843
+

@@ -1,0 +1,9 @@
+#+title:      meow-edit
+#+date:       [2024-09-27 Fri 15:13]
+#+filetags:   :emacs:
+#+identifier: 20240927T151330
+
+Trying to integration meow-edit to my Emacs workflow.
+Still learning and practicing.
+
+The only cons is it not use vim's default keybindings. So I have to learn new keybindings. But luckly, meow-edit is fully customizable. I can freely hack it to make it more suitable for me.
