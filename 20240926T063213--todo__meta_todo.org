@@ -4,6 +4,8 @@
 #+identifier: 20240926T063213
 
 * Projects
+action to be done, output values.
+
 ** Electronics and Modeling
 *** TODO iPhone 12 mini Case
 1. Find or create a useful iPhone 12 mini model
@@ -29,13 +31,17 @@
 - Assemble and test trackball
 - Customize firmware if needed
 
-*** TODO Macropad
-- Design 3x3 layout
+*** DONE  Macropad
+- Design 3x3 layout. 1x2
 - Source Cherry MX switches
-- Choose microcontroller (e.g., Arduino Pro Micro, RP2040)
+- Choose microcontroller RP2040
+  - Programming with microPython
+- Design PCB and manufacture
+  - PCB bonding
 - Design and 3D print case
-- Wire switches and program firmware
-- Test and iterate design
+- Test
+
+*** TODO 3D Basketball
 
 ** Lighting Projects
 *** TODO Yeelight lamp
@@ -148,19 +154,23 @@
   
 **** TODO curosr like Emacs AI mode
 
-* Learning
+* Learns
+new things to research
+
 ** Programming
-*** Emacs Lisp
+*** TODO Emacs Lisp
 - Complete Emacs tutorial
 - Study Emacs Lisp manual
 - Practice writing simple functions
 - Develop a custom Emacs package
 
-*** Python
+*** TODO Python
 - Review advanced Python concepts
 - Study popular libraries (e.g., NumPy, Pandas)
 - Complete online course or coding challenge
 - Contribute to an open-source Python project
+
+*** TODO Rust
 
 ** Typography
 - Study fundamental principles
@@ -174,7 +184,30 @@
 - Explore digital drawing tools
 - Create a series of illustrations
 
-* Life Habits
+** Electronics
+
+** 3D Modeling
+
+** Machenical
+
+** Robotics
+
+** AI and Machine Learning
+
+** Web Development
+
+* Research
+research more possible of world.
+
+* Habits
+habit are generally good things to keep life in order and positive. they are life time and daily projects.
+
+** Productivity
+
+** Time Management
+
+** Finnding
+
 ** Mindfulness and Well-being
 - Establish daily meditation practice
 - Keep gratitude journal
@@ -187,13 +220,36 @@
 - Incorporate minimalism in daily life
 - Explore Zen arts (e.g., calligraphy, tea ceremony)
 
-** Personal Growth
-*** Set and review personal goals regularly
-*** Read self-improvement books
+** Listening, Speaking, Reading, Writing
+
+** Listening, Watching
+** Speaking
+- talk with ai
+  
+** Reading
+Read random articles and books
+
+** Writing
+*** Blogging
+*** Note-taking
+
+** Set, Review personal goals regularly
+
 *** Attend workshops or seminars
 *** Practice active listening and empathy
 
+** Practices
+practice are things needs to do again and again to get better.
+
+*** Typing
+
+*** Drawing
+
+*** Painting
+
 * Health
+health is a very basic things.
+
 ** Exercise
 - Establish regular workout routine
 - Try new forms of exercise (e.g., yoga, rock climbing)

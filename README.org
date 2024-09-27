@@ -4,12 +4,13 @@
 Welcome to my digital realm! I'm Felix Murray Tang, an innovator, creator, and lifelong learner. This space reflects my passions, projects, and the endless curiosity that drives me. As a multifaceted individual, I have a deep love for technology, nature, and knowledge.
 
 * What's this
+This website is a digital garden where I cultivate my thoughts, ideas, and projects. It's a place for me to share my journey, learnings, and creations with the world. Here, you'll find a mix of contents, including:
 
-This website contains various contents inside the =/node/= directory. Here are some quick links to different sections:
-
-- [[/notes/][Notes]]
-- [[/articles/][Articles]]
-- [[/projects/][Projects]]
+- [[/todo/][TODO]] to list all my tasks. I have catalog all my tasks (include planing) into different categories. like health, habits, researchs, learns, projects
+  
+- [[/notes/][Notes]] are  all my short notes, link and backlink will support soon
+- [[/projects/][Projects]] is my projects seprate list page
+- [[/articles/][Articles]] I call contents with deep research and thinking and content organzied as articles
 
 And audio, video contents,
 
@@ -17,27 +18,22 @@ And audio, video contents,
 - [[/videos/][Videos]] (Coming Soon)
 
 * What I Do
-
 My current endeavors span across software, hardware, and personal growth:
 
 ** Software
-
 - Crafting this website using Astro, with a focus on content creation
 - Mastering =FreeBSD= for server management and advanced networking
 - Integrating my entire workflow into ~Emacs~ to embrace simplicity
 
 ** Hardware
-
 - Electronic: Recently completed my first custom PCB design using =KiCad=
 - Mechanical: Exploring 3D printing and modeling with FreeCAD
 - Robotics: Planning to dive deeper into ROS (Robot Operating System) in the near future
 
 ** Cross-disciplinary Projects
-
 I'm working on (or planning) several small side projects that combine my various skills and interests.
 
 ** Personal Growth
-
 - Reading: Committed to reading daily for at least an hour as a long-term project
 - *Fitness:* Running 30 km weekly and embarking on monthly long trail runs or hikes
 - Content Creation
@@ -45,7 +41,6 @@ I'm working on (or planning) several small side projects that combine my various
   - YouTube: Planning to launch a channel soon (stay tuned!)
 
 * Connect With Me
-
 Feel free to reach out and connect:
 
 - GitHub: [[https://github.com/felixmurraytang][felixmurraytang]]
