@@ -3,7 +3,7 @@
 
 Welcome to my digital realm! I'm Felix Murray Tang, an innovator, creator, and lifelong learner. This space reflects my passions, projects, and the endless curiosity that drives me. As a multifaceted individual, I have a deep love for technology, nature, and knowledge.
 
-* What's this
+* What's this site about?
 This website is a digital garden where I cultivate my thoughts, ideas, and projects. It's a place for me to share my journey, learnings, and creations with the world. Here, you'll find a mix of contents, including:
 
 - [[/todo/][TODO]] to list all my tasks. I have catalog all my tasks (include planing) into different categories. like health, habits, researchs, learns, projects
@@ -17,7 +17,7 @@ And audio, video contents,
 - [[/podcasts/][Podcasts]] (Coming Soon)
 - [[/videos/][Videos]] (Coming Soon)
 
-* What I Do
+* What I'm doing mainly?
 My current endeavors span across software, hardware, and personal growth:
 
 ** Software

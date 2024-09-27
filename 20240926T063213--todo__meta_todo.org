@@ -8,19 +8,8 @@ action to be done, output values.
 
 ** Electronics and Modeling
 *** TODO iPhone 12 mini Case
-1. Find or create a useful iPhone 12 mini model
-2. Create case
-   - Implement Voronoi pattern
-   - Integrate MagSafe compatibility
-3. Test fit and adjust as necessary
-4. Finalize design for 3D printing
 
 *** TODO MagSafe holder for Car
-1. Research existing designs for inspiration
-2. Design holder compatible with car vents or dashboard
-3. Integrate MagSafe charging capabilities
-4. Create prototype and test in vehicle
-5. Iterate based on real-world usage
 
 *** TODO Adept Trackball
 [[https://github.com/ploopyco/adept-trackball][GitHub]] and [[https://www.reddit.com/r/Trackballs/comments/16uc8kt/the_adept_a_completely_opensource_3dprinted/][Reddit]]
@@ -32,114 +21,40 @@ action to be done, output values.
 - Customize firmware if needed
 
 *** DONE  Macropad
-- Design 3x3 layout. 1x2
-- Source Cherry MX switches
-- Choose microcontroller RP2040
-  - Programming with microPython
-- Design PCB and manufacture
-  - PCB bonding
-- Design and 3D print case
-- Test
 
 *** TODO 3D Basketball
 
 ** Lighting Projects
 *** TODO Yeelight lamp
-- Research Yeelight API
-- Develop custom control software
-- Integrate with home automation system
 
 *** TODO Morchella Lamp
-- Design organic, mushroom-inspired form
-- Choose appropriate materials (e.g., translucent filament for 3D printing)
-- Integrate LED lighting system
-- Create and test prototype
 
 *** TODO Kerosene Lamp
-- Research traditional kerosene lamp designs
-- Develop safety-focused modern interpretation
-- Source or create glass chimney
-- Build and test prototype
 
 ** Advanced Projects
 *** TODO Keyboard + Trackball
-- Determine layout (e.g., split, ortholinear)
-- Integrate trackball into keyboard design
-- Choose switches and keycaps
-- Design PCB and case
-- Assemble and program firmware
 
 *** TODO AI Assistant
-- Define specific use case and requirements
-- Choose AI framework (e.g., TensorFlow, PyTorch)
-- Develop or fine-tune model
-- Create user interface (CLI, GUI, or web-based)
-- Implement privacy and security measures
 
 *** TODO Custom Clock
-- Decide on clock type (digital, analog, or hybrid)
-- Design unique display mechanism
-- Choose timekeeping method (RTC module, network time)
-- Develop firmware and UI
-- Build and calibrate prototype
 
 *** TODO Camera Project
-- Define camera type (e.g., digital, analog, specialized)
-- Design camera body and mechanism
-- Source or develop image sensor and optics
-- Create firmware for digital processing (if applicable)
-- Test and refine image quality
 
 *** TODO Bangkok City Model
-- Gather accurate geographical data
-- Choose scale and level of detail
-- Design modular sections for easier printing and assembly
-- 3D print buildings and landscape
-- Add finishing touches (paint, labels, lighting)
 
 ** Robotics
 *** TODO Ergo Jr
-- Source components
-- 3D print structural parts
-- Assemble robot
-- Program basic movements
-- Develop custom applications
 
 *** TODO Poppy Torso
-- Acquire or 3D print parts
-- Assemble torso and arms
-- Set up control software
-- Implement gesture recognition
-- Develop interactive demonstrations
 
 *** TODO Poppy Humanoid
-- Source all necessary components
-- 3D print custom parts
-- Assemble full humanoid structure
-- Implement walking algorithms
-- Develop advanced interaction capabilities
 
 *** TODO Robot Hand
-- Design or choose existing model
-- 3D print or source components
-- Integrate servos or other actuators
-- Develop control software
-- Implement various grip patterns
 
 *** TODO Robot Leg
-- Research biomechanics of human leg
-- Design leg structure and joints
-- Choose appropriate actuators
-- Develop balance and walking algorithms
-- Test and refine gait
 
 ** Software and Web Development
 *** TODO Morphic Project
-- Define project scope and objectives
-- Choose development framework
-- Implement core functionality
-- Design user interface
-- Conduct testing and gather feedback
 
 *** Website
 **** TODO Home Page (/)
@@ -159,30 +74,12 @@ new things to research
 
 ** Programming
 *** TODO Emacs Lisp
-- Complete Emacs tutorial
-- Study Emacs Lisp manual
-- Practice writing simple functions
-- Develop a custom Emacs package
 
 *** TODO Python
-- Review advanced Python concepts
-- Study popular libraries (e.g., NumPy, Pandas)
-- Complete online course or coding challenge
-- Contribute to an open-source Python project
 
 *** TODO Rust
 
 ** Typography
-- Study fundamental principles
-- Practice with different typefaces
-- Learn about responsive typography for web
-- Create a typographic poster or digital design
-
-** Drawing
-- Practice daily sketches
-- Study perspective and shading techniques
-- Explore digital drawing tools
-- Create a series of illustrations
 
 ** Electronics
 
@@ -220,9 +117,10 @@ habit are generally good things to keep life in order and positive. they are lif
 - Incorporate minimalism in daily life
 - Explore Zen arts (e.g., calligraphy, tea ceremony)
 
-** Listening, Speaking, Reading, Writing
-
 ** Listening, Watching
+- Podcasts
+- YouTube
+
 ** Speaking
 - talk with ai
   
