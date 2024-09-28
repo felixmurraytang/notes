@@ -3,3 +3,9 @@
 #+filetags:   :emacs:
 #+identifier: 20240927T152843
 
+denote just like a naming system.
+
+the philosophy of denote is what i love. simple and transparent.
+
+* TODO how denote link and backlink works?
+denote link just like denote:<identifier>
