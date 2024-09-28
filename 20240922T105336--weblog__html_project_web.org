@@ -29,7 +29,12 @@ need know why code don't has color
 
 ** DONE rehypeAutolinkHeadings
 
-** TODO mirgate to cloudflare pages
+** DONE mirgate to cloudflare pages
+CLOSED: [2024-09-29 Sun 00:16]
+
+- State "DONE"       from "TODO"       [2024-09-29 Sun 00:16]
+  
+already mirgate to cloudflare pages.
 
 ** TODO replace denote link
 
